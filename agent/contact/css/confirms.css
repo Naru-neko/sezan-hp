@@ -1,0 +1,121 @@
+::-webkit-scrollbar{
+    width: 13px;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: #ccc;
+ }
+
+ ::-webkit-scrollbar-thumb{
+    background-color: #17585d;
+ }
+
+body{
+    background-color: #ffffff;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    color: rgb(31, 31, 31);
+    font-family: 'Fira Code';
+    font-weight: 300;
+}
+
+form {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.h1-title{
+    display: flex;
+    justify-content: baseline;
+    width: min-content;
+    align-items: center;
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+.h1-title img{
+    width: 4rem;
+    margin-left: 1rem;
+}
+
+h1{
+    margin: 0;
+    font-size: 8vmin;
+    font-weight: bolder;
+    font-family: "Franklin Gothic";
+    color: rgb(0, 0, 0);
+}
+
+h4{
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2.3vmin;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.section{
+    margin-bottom: 2rem;
+    border-top: #9c9c9c solid 1px;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+h2{
+    font-size: 2.1vmin;
+    margin: 0;
+    font-weight: 150;
+}
+
+h3{
+    font-size: 2.1vmin;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.button{
+    width: 18%;
+    font-size: 2.5vmin;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.5vmin;
+    border: solid 1px #7a7a7a;
+    background-color: #9c9c9c;
+    color: rgb(255, 255, 255);
+}
+
+.back{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: #ffffff;
+    color: black;
+}
+
+@media screen and (max-width:480px) { /*phone*/
+    h1{
+        font-size: 12vmin;
+    }
+    h2{
+        font-size: 5vmin;
+    }
+    .input-infos{
+        font-size: 4vmin;
+    }
+    #contact-content{
+        font-size: 4vmin;
+    }
+    #submit{
+        font-size: 4vmin;
+    }
+    h3{
+        font-size: 3vmin;
+    }
+}

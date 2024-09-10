@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="abouts.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="icon" href="/images/logo/sezan2.ico">
+    <title>about | 聖傘-CreativePRODUCTION</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+
+        <h1>ABOUT</h1>
+
+        <div class="section mission">
+            <p>Our Mission</p>
+            <p>BELIEVE/WISH<br>CREATIVE</p>
+            <p>自己表現をして夢や希望を堂々と持てる明るい世界にしたい。<br><br>
+                そう願いながら日々様々なエンターテインメントを創っています。<br><br>
+                いつかこのエンタメをきっかけに世界が明るく平和になることを信じて、<br>
+                １つ１つのクリエイティブに想いを込めながら、<br>
+                新しいものを生み出して人々に笑顔を届ける会社です。</p>
+        </div>
+
+        <div class="section clients">
+            <p>Clients</p>
+            <div class="client-list">
+
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+                
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+            
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+
+                <a class="client">
+                    <img src="/images/sample169.png" alt="">
+                    <p>client name</p>
+                </a>
+
+            </div>
+        </div>
+
+    </main>
+    
+    <div id="footer"></div>
+
+    <script>
+        fetch("../component/header/headers.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("../component/footer/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+    
+</body>
+</html>
