@@ -8,7 +8,7 @@
 		"liveServer.settings.proxy": {
 			"enable": true,
 			"baseUri": "/",
-			"proxyUri": "http://localhost/sezan/"
+			"proxyUri": "http://localhost/sezan-hp/"
 		},
 		"liveServer.settings.useWebExt": true,
 		"liveServer.settings.fullReload": true,

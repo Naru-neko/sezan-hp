@@ -1,0 +1,135 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    animation: fadeIn forwards 0.3s linear; 
+}
+
+body{
+    margin: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: 9vmin;
+    font-weight: bolder;
+    line-height: 1;
+    margin: 0;
+    margin-top: 14vh;
+    margin-bottom: 10vmin;
+    margin-left: 3vw;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    padding-top: 20vmin;
+    background-color: #e9e9e9;
+    padding-bottom: 20vmin;
+}
+
+.pickup {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vmin;
+}
+
+.pickup p:nth-child(1) {
+    margin: 0;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: #292929;
+    margin-bottom: 5vmin;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.pickup-content {
+    margin: 0;
+    width: 60vw;
+    cursor: url(/images/cursor-more.png), default;
+    transition: transform 0.2s linear;
+}
+
+.pickup-content p {
+    margin: 0;
+    margin-top: 3vmin;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+.pickup-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 4vmin;
+    font-weight: bold;
+    color: #292929;
+    margin-bottom: 10vmin;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.contents {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+}
+
+.content {
+    margin: 0;
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    margin-bottom: 10vmin;
+    width: 54vmin;
+    text-decoration: none;
+    cursor: url(/images/cursor-more.png), default;
+    transition: transform 0.2s linear;
+}
+
+.content:hover , .pickup-content:hover{
+    transform: scale(1.1);
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.content-text {
+    margin: 0;
+    padding-top: 0.8rem;
+}
+
+.content-text p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    color: #4d4d4d;
+    text-align: center;
+}
+
+@media screen and (max-width:500px) { /*phone*/
+    
+}
+
+@media screen and (max-width:1400px) {
+    .content {
+        width: 40vmin;
+    }
+}
