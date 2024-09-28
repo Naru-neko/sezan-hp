@@ -1,0 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+main {
+    margin-top: 8vmin;
+    margin-bottom: 10vmin;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn forwards 0.3s 0.7s linear;
+}
+
+#main-area {
+    width: 70vw;
+}
+
+h2 {
+    margin-top: 8vmin;
+    font-size: 5vmin;
+    text-shadow: #9b9b9b 4px 4px 3px;
+    border-bottom: #ffffff 1px solid;
+}
+
+h2::after {
+    margin-left: 1rem;
+    font-size: 2.3vmin;
+    text-shadow: none;
+    color: #d4d4d4;
+}
+
+#h2-male::after {
+    content: "男性";
+}
+
+#h2-female::after {
+    content: "女性";
+}
+
+#h2-outsourcing::after {
+    content: "業務委託";
+}
+
+.talents {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.talent {
+    width: 23%;
+    margin: 1%;
+    text-decoration: none;
+    color: #c2c2c2;
+    font-size: 1.5vw;
+}
+
+.talent-img {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.talent-img img {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.talent p {
+    transition: 0.3s
+}
+
+.talent-img img:hover{
+    transform: scale(1.1);
+}
+
+.talent:hover p {
+    color: #ffffff;
+}
+
+.talent p {
+    text-align: center;
+}

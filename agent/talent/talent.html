@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="talent.css">
+    <link rel="icon" href="/images/logo/sezan2.ico">
+    <title>聖傘 | TALENT</title>
+</head>
+<body>
+    <header><div id="header"></div></header>
+
+    <main>
+        <div id="main-area">
+
+            <h2 id="h2-male">Male</h2>
+            <div class="talents male">
+                <a class="talent" href="talents/sena.html">
+                    <div class="talent-img"><img src="/images/cast/sena.png" alt=""></div>
+                    <p class="name">Sena Umeaguku</p>
+                </a>
+                <a class="talent" href="talents/sena.html">
+                    <div class="talent-img"><img src="/images/cast/sena.png" alt=""></div>
+                    <p class="name">Sena Umeaguku</p>
+                </a>
+                <a class="talent" href="talents/sena.html">
+                    <div class="talent-img"><img src="/images/cast/sena.png" alt=""></div>
+                    <p class="name">Sena Umeaguku</p>
+                </a>
+                <a class="talent" href="talents/sena.html">
+                    <div class="talent-img"><img src="/images/cast/sena.png" alt=""></div>
+                    <p class="name">Sena Umeaguku</p>
+                </a>
+                <a class="talent" href="talents/sena.html">
+                    <div class="talent-img"><img src="/images/cast/sena.png" alt=""></div>
+                    <p class="name">Sena Umeaguku</p>
+                </a>
+
+            </div>
+
+            <h2 id="h2-female">Female</h2>
+            <div class="talents female">
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+                <a class="talent" href="talents/nozomi.html">
+                    <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <p class="name">NOZOMI</p>
+                </a>
+
+            </div>
+
+            <h2 id="h2-outsourcing">Outsourcing</h2>
+            <div class="talents female">
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+                <a class="talent" href="talents/uwa.html">
+                    <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                    <p class="name">UWA</p>
+                </a>
+
+            </div>
+
+        </div>
+    </main>
+
+
+
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("/agent/component/header/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("/agent/component/footer/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>

@@ -6,74 +6,108 @@
             <li><a href="/agent/talent/talent.html">TALENT</a></li>
             <li><a href="/agent/label/label.html">LABEL</a></li>
             <li><a href="/agent/contact/contact.php">CONTACT</a></li>
+            <a href="https://www.instagram.com/sezan_official/?ref=digital-life-asia&hl=af" id="insta-icon-footer">
+                <img src="/images/sns/insta/Instagram_Glyph_White.png" alt="">
+            </a>
         </ul>
-
-        <a href="https://www.instagram.com/sezan_official/?ref=digital-life-asia&hl=af" id="insta-icon">
-            <img src="/images/Instagram_Glyph_White.png" alt="">
-        </a>
     </div>
     <p id="copyright">@ 2024 聖傘 ALL RIGHTS RESERVED</p>
 </footer>
+
+<script>
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 <style>
     footer {
-        background-color: black;
+        background: none;
+        position: relative;
+        background-color: #000000;
         width: 100%;
         padding: 0;
-        padding-top: 5vh;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
     }
-    
+
     #footer-contents {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         margin-left: 4vw;
         margin-right: 4vw;
-        margin-bottom: 5vw;
     }
-    
+
     #footer-title {
         color: white;
-        font-size: 3vw;
+        font-size: 5vmax;
         font-weight: bolder;
         margin: 0;
     }
-    
+
     #footer-title::after{
-        content: "sezan";
+        content: "AGENT";
         color: rgba(112, 112, 112, 0.5);
-        font-size: 3vw;
+        font-size: 4vmax;
         font-weight: bolder;
         margin-left: 5rem;
         position: absolute;
-        transform: translate(-70%, 15%);
+        transform: translate(-70%, 60%);
     }
-    
+
     #footer-contents ul {
         margin: 0;
         padding: 0;
     }
-    
+
     #footer-contents ul li {
         list-style: none;
         margin-bottom: 0.8vw;
     }
-    
+
     #footer-menu li:hover {
         animation: pulse 0.5s infinite;
     }
-    
+
     #footer-contents ul li a {
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-size: 1.3vw;
+        font-size: 1.2vmax;
         font-weight: bolder;
     }
-    
+
+    #insta-icon-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    #insta-icon-footer img {
+        height: 3vmin;
+        margin-right: 1rem;
+    }
+
+    #insta-icon-footer img:hover {
+        animation: rotation 1.3s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(360deg);
+        }
+    }
+
     #copyright {
-        color: rgb(255, 255, 255);
-        font-size: 1vw;
+        color: rgb(117, 117, 117);
+        font-size: 1.1vmax;
+        position: absolute;
         font-weight: bolder;
+        bottom: 10px;
+        left: 10px;
         margin: 0;
-        margin-left: 1vw;
     }
 </style>

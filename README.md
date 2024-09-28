@@ -1,9 +1,9 @@
 # WEB制作　TASKS
 - SEO対策
   - [info](https://satori.marketing/marketing-blog/seo-measures/#:~:text=SEO%E3%81%A8%E3%81%AF%E3%80%8CSearch%20Engine,%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E3%81%99%E3%80%82)
-- WEB DB 
-  - php or python? 
-- CMS 
+- WEB DB
+  - php or python?
+- CMS
 
 - Webページの目的
 
@@ -42,23 +42,13 @@ https://www.chocolate-inc.com/
 AGENT
 https://starbase.jp/
 
-todo 
-- seo
-- 
 TODO
-サーバーレンタル済み
-お名前　RSプラン
-ファイルアップロードで良さそう？
+- サーバーレンタル済み
+- お名前　RSプラン
+- ファイルアップロードで良さそう
 
-llc いらない
-企業理念とかモットーの文章
-ホームのトップ　コンテンツ　おもしろみ
-雨　や　雲　等のテーマとか
-カーソル　傘
-LABEL COMING　SOON
-CLIENT 乗っけるだけ
-コンタクト　文章
-キャスティング　個人ページ　いる
-各ページからトップには飛べないほうがいい
-AGENT 黒メイン　色　シックに　イケてる感じで
-個人ページ　経歴　名前　SNS　身長　サイズ　
+- 企業理念とかモットーの文章
+- ホームのトップ　コンテンツ　おもしろみ
+- 雨　や　雲　等のテーマとか
+- CLIENT 乗っけるだけ
+- コンタクト　文章

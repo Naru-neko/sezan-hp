@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="talents.css">
+    <link rel="icon" href="/images/logo/sezan2.ico">
+    <title>TALENT | SENA</title>
+</head>
+<body>
+    <header><div id="header"></div></header>
+
+    <div id="header2">
+        <h1>Profile</h1>
+    </div>
+
+    <main>
+        <div class="profile">
+            <div class="prof-img"><img src="/images/cast/sena.png" alt=""></div>
+
+            <div class="info">
+                <h2 >SENA UMEAGUKU</h2>
+                <h3>DANCER/MODEL</h3>
+                <div class="sns">
+                    <a href=""><img src="/images/sns/insta/Instagram_Glyph_White.png" alt=""></a>
+                    <a href=""><img src="/images/sns/tiktok/TikTok-logo-RGB-Stacked-White.png" alt=""></a>
+                    <a href=""><img src="/images/sns/youtube/youtube_social_icon_white.png" alt=""></a>
+                    <a href=""><img src="/images/sns/x/logo-white.png" alt=""></a>
+                </div>
+
+                <div class="info-content">
+                    <p class="info-head">生年月日</p><p>XXXX/XX/XX</p>
+                </div>
+                <div class="info-content">
+                    <p class="info-head">出身地</p><p>静岡県</p>
+                </div>
+                <div class="info-content">
+                    <p class="info-head">サイズ</p><p>175cm 65kg</p>
+                </div>
+                <div class="info-content career">
+                    <p class="info-head">経歴</p>
+                    <ul>
+                        <li><p>2023</p><p>地上波TVCM instax チェキ</p></li>
+                        <li><p>2022</p><p>地上波TVCM 三菱UFJ銀行</p></li>
+                        <li><p>2022</p><p>藤井風 まつりMV出演</p></li>
+                        <li><p>2022</p><p>地上波TVCM metaquest2 メイン</p></li>
+                        <li><p>2021</p><p>嵐バックダンサー</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="footer"></div>
+    <script>
+        fetch("/agent/component/header/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("/agent/component/footer/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+</body>
+</html>

@@ -32,14 +32,14 @@
   <head>
   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/completes.css">
+    <link rel="stylesheet" href="css/complete.css">
     <link rel="icon" href="../../images/logo/sezan2.ico">
     <title>送信完了 | 聖傘</title>
   </head>
   <body>
+    <div id="header"></div>
     <div class="h1-title">
-        <h1>CONTACT</h1>
-        <img src="../../images/mail.png" alt="">
+        <h1>送信完了</h1>
     </div>
     <div class="contents">
       <h2><?php echo $message1; ?></h2>
@@ -51,7 +51,7 @@
     </div>
 
     <div id="footer"></div>
-    
+
     <script>
         fetch("../component/header/header.html")
             .then((response) => response.text())

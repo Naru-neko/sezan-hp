@@ -5,80 +5,18 @@ html {
     overflow-x: hidden;
 }
 
-
-
 body{
     margin: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #0e0e0e;
     color: #ffffff;
 }
 
-header {
-    padding-top: 2vmin;
-    padding-bottom: 2vmin;
-}
 
-.sidebar {
-    margin: 0;
-    padding-top: 2rem;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0, 0);
-    top: 0;
-    left: 0;
-    width: 9vmin;
-    height: 100vh;
-    background-color: #000000;
-    color: #ffffff;
-    border-right: 3px solid #a5a5a5;
-    text-align: center;
-    z-index: 2;
-    font-size: 4vmin;
-    writing-mode: vertical-lr;
-    text-align: center;
-    overflow: hidden;
-}
-
-.sidebar p {
-    flex-shrink: 0;
-    white-space: nowrap;
-    text-align: center;
-    margin: 0;
-    margin-top: 1rem;
-    &:nth-child(odd) {
-        animation: MoveLeft 24s -12s infinite linear;
-      }
-    
-      &:nth-child(even) {
-        animation: MoveLeft2 24s infinite linear; 
-      }
-}
-
-@keyframes MoveLeft {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(100%);
-    }
-  }
-  
-  @keyframes MoveLeft2 {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(200%);
-    }
-  }
-  
 
 main {
     margin: 0;
-    margin-left: 9vmin;
+    margin-top: 8vmin;
     font-size: 10vmin;
     width: 100vw - 9vmin;
     overflow-wrap: break-word;
@@ -92,13 +30,12 @@ main {
 }
 
 #footer {
-    margin-left: 9vmin;
     width: 100vw - 9vmin;
 }
 
 
 @media screen and (max-width:500px) { /*phone*/
-    
+
 }
 
 @media screen and (max-width:1400px) {
