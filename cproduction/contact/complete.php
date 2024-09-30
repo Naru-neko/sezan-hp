@@ -37,6 +37,7 @@
     <title>送信完了 | 聖傘</title>
   </head>
   <body>
+    <div id="humburger"></div>
     <div class="h1-title">
         <h1>CONTACT</h1>
         <img src="../../images/mail.png" alt="">
@@ -51,11 +52,11 @@
     </div>
 
     <div id="footer"></div>
-    
+
     <script>
-        fetch("../component/header/header.html")
+        fetch("../component/header/humburger.html")
             .then((response) => response.text())
-            .then((data) => document.querySelector("#header").innerHTML = data);
+            .then((data) => document.querySelector("#humburger").innerHTML = data);
         fetch("../component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);

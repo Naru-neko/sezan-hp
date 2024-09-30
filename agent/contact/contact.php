@@ -24,11 +24,11 @@
         <div class="section name">
             <div class="raw-name">
                 <h2>お名前<span class="required">必須</span></h2>
-                <input type="text" name="name" placeholder="名前を入力">
+                <input type="text" name="name" placeholder="名前を入力" required>
             </div>
             <div class="hurigana">
                 <h2>ふりがな<span class="required">必須</span></h2>
-                <input type="text" name="hurigana" placeholder="ふりがなを入力">
+                <input type="text" name="hurigana" placeholder="ふりがなを入力" required>
             </div>
         </div>
 
@@ -39,30 +39,23 @@
 
         <div class="section tel">
             <h2>電話番号<span class="required">必須</span></h2>
-            <input type="text" name="tel" placeholder="電話番号を入力">
+            <input type="text" name="tel" placeholder="電話番号を入力" required>
         </div>
 
         <div class="section mail">
             <h2>メールアドレス<span class="required">必須</span></h2>
-            <input type="text" name="mail" placeholder="メールアドレスを入力">
+            <input type="text" name="mail" placeholder="メールアドレスを入力" required>
         </div>
 
         <div class="section title">
             <h2>件名<span class="required">必須</span></h2>
-            <input type="text" name="title" placeholder="件名を入力">
+            <input type="text" name="title" placeholder="件名を入力" required>
         </div>
 
         <div class="section content">
             <h2>お問い合わせ内容<span class="required">必須</span></h2>
-            <textarea name="inquiry" id="contact-content" cols="30" rows="8" placeholder="内容を入力"></textarea>
+            <textarea name="inquiry" id="contact-content" cols="30" rows="8" placeholder="内容を入力" required></textarea>
         </div>
-
-        <p id="recaptcha">ここにreCAPTCHAとか個人情報の取扱チェック入れる？<br>
-        変更が保存されない可能性アラート<br>
-        必須項目の確認</p>
-        <style>
-            #recaptcha{font-size: 3vmin;}
-        </style>
 
         <input type="submit" id="submit" value="入力内容の確認" onclick="">
 

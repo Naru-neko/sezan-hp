@@ -20,6 +20,18 @@ main {
 }
 
 h1 {
+    position: fixed;
+    font-size: 8vmin;
+    margin: 0;
+    opacity: 0.5;
+    z-index: 100;
+    top: 30vh;
+    left: 0;
+    writing-mode: vertical-rl;
+    line-height: 0.6;
+}
+
+h2 {
     font-size: 7vw;
     opacity: 0.8;
     text-shadow: #4b4b4bb6 1rem 1rem 1rem;

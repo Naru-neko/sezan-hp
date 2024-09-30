@@ -10,8 +10,6 @@
 
 <body>
 
-    <div id="header"></div>
-
     <div class="h1-title">
         <h1>確認</h1>
     </div>
@@ -68,17 +66,6 @@
         <input class="button submit" type="submit" value="送信" onclick="">
 
     </form>
-
-    <div id="footer"></div>
-
-    <script>
-        fetch("../component/header/header.html")
-            .then((response) => response.text())
-            .then((data) => document.querySelector("#header").innerHTML = data);
-        fetch("../component/footer/footer.html")
-            .then((response) => response.text())
-            .then((data) => document.querySelector("#footer").innerHTML = data);
-    </script>
 
 </body>
 </html>

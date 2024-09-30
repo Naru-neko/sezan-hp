@@ -1,22 +1,28 @@
 <header>
-    <a href="/cproduction/cproduction.html"><img src="/images/logo/sezan-plane.png" alt=""></a>
-    <div class="header-right">
-        <ul>
-            <li><a href="/cproduction/about/about.html">ABOUT</a></li>
-            <li><a href="/cproduction/contents/contents.html">CONTENTS</a></li>
-            <li><a href="/cproduction/works/works.html">WORKS</a></li>
-            <li><a href="/cproduction/contact/contact.php">CONTACT</a></li>
-        </ul>
-        <a href="https://www.instagram.com/sezan_official/?ref=digital-life-asia&hl=af" id="insta-icon"><img src="/images/sns/insta/Instagram_Glyph_Gradient.png" alt=""></a>
-    </div>
+    <a href="/cproduction/cproduction.html"><img src="/images/logo/sezan-plane-white.png" alt=""></a>
+    <article class="news">
+        <p>NEWS</p>
+        <div class="news-line">
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+            <div>No News Available&nbsp;</div>
+        </div>
+    </article>
+
     <style>
         header {
             top: 0;
-            position: fixed;
+            position: absolute;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: linear-gradient(180deg, #ffffff, transparent);
             color: black;
             width: 100%;
             padding: 0;
@@ -26,69 +32,94 @@
         }
 
         header img {
-            width: 13vmin;
+            width: 18vmin;
             height: auto;
-            margin-left: 2rem;
+            margin-left: 1vmin;
             z-index: 100;
         }
 
-        .header-right {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .news {
+            width: calc(100vw - 80vmin);
+            color: #e0e0e0;
             padding: 0;
             margin: 0;
-            margin-right: 1rem;
-            z-index: 100;
-        }
-
-        header ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            margin-right: 2rem;
-            text-decoration: none;
-        }
-
-        header li {
-            margin-left: 2rem;
-        }
-
-        header li:hover {
-            animation: heartBeat 1s;
-        }
-
-        header a {
-            text-decoration: none;
-            color: black;
-            font-size: 1.8vmin;
+            margin-left: 5vmin;
+            margin-top: 1vmin;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             font-weight: bold;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .news p {
+            margin: 0;
+            font-size: 1.8vmin;
+            color: #a1a1a1;
+        }
+
+        .news-line {
+            border-top: #ffffff 1px solid;
+            border-bottom: #ffffff 1px solid;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .news-line div {
+            flex: 0 0 auto;
+            margin: 0;
+            padding: 0;
+            margin-top: 0.5vmin;
+            margin-bottom: 0.5vmin;
+            white-space: nowrap;
+            overflow: hidden;
+            width: auto;
+        }
+
+        .news-line div:nth-child(odd) {
+            animation: scroll1 3s -1.5s linear infinite;
+        }
+
+        .news-line div:nth-child(even) {
+            animation: scroll2 3s linear infinite;
+        }
+
+        @keyframes scroll1 {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes scroll2 {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-200%);
+            }
         }
 
         header a:hover {
             color: #00a0df;
         }
 
-        #insta-icon {
-            display: flex;
-            align-items: center;
-        }
 
-        #insta-icon img {
-            width: 4vmin;
-            margin-right: 1rem;
-        }
 
-        #insta-icon img:hover {
-            animation: rotation 1.3s infinite linear;
-        }
-
-        @keyframes rotation {
-            from {
-                transform: rotateY(0deg);
+        @media screen and (max-width:1250px) {
+            header img {
+                width: 22vmin;
             }
-            to {
-                transform: rotateY(360deg);
+            .news {
+                display: none;
             }
         }
 

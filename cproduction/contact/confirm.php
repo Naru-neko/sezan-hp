@@ -10,8 +10,6 @@
 
 <body>
 
-    <div id="header"></div>
-
     <div class="h1-title">
         <h1>CONTACT</h1>
         <img src="../../images/mail.png" alt="">
@@ -54,8 +52,8 @@
         <div class="section">
             <h2>お問い合わせ内容</h2>
             <h3><?php echo $_POST["inquiry"]; ?></h3>
-        </div> 
-    
+        </div>
+
         <input type="hidden" name="name" value="<?php echo $_POST["name"]; ?>">
         <input type="hidden" name="hurigana" value="<?php echo $_POST["hurigana"]; ?>">
         <input type="hidden" name="company" value="<?php echo $_POST["company"]; ?>">
@@ -65,21 +63,11 @@
         <input type="hidden" name="inquiry" value="<?php echo $_POST["inquiry"]; ?>">
 
         <button class="button back" type="button" onclick="history.back()">戻る</button>
-        
+
         <input class="button submit" type="submit" value="送信" onclick="">
 
     </form>
 
-    <div id="footer"></div>
-    
-    <script>
-        fetch("../component/header/header.html")
-            .then((response) => response.text())
-            .then((data) => document.querySelector("#header").innerHTML = data);
-        fetch("../component/footer/footer.html")
-            .then((response) => response.text())
-            .then((data) => document.querySelector("#footer").innerHTML = data);
-    </script>    
 
 </body>
 </html>

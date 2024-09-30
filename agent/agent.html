@@ -13,26 +13,122 @@
     <header><div id="header"></div></header>
 
     <main>
-        <div id="head-title">
-            <p>聖傘</p>
-            <p>AGENT</p>
+        <div class="top">
+            <a href="works/works.html" class="top-left">
+
+                <div class="scroll-imgs si1">
+                    <img src="/images/works/asap.webp" alt="">
+                    <img src="/images/works/bape.webp" alt="">
+                    <img src="/images/works/billy.webp" alt="">
+                    <img src="/images/works/CHODAI.webp" alt="">
+                    <img src="/images/works/edhiii-galaxy.webp" alt="">
+                    <img src="/images/works/fennel.webp" alt="">
+                    <img src="/images/works/kvibaba.webp" alt="">
+                    <img src="/images/works/mukade.webp" alt="">
+                    <img src="/images/works/onesonly.webp" alt="">
+                    <img src="/images/works/rakuten.webp" alt="">
+                    <img src="/images/works/rakura.webp" alt="">
+                    <img src="/images/works/soundsdeli.webp" alt="">
+                    <img src="/images/works/thecap.webp" alt="">
+                    <img src="/images/works/quest.webp" alt="">
+                </div>
+                <div class="scroll-imgs si2">
+                    <img src="/images/works/asap.webp" alt="">
+                    <img src="/images/works/bape.webp" alt="">
+                    <img src="/images/works/billy.webp" alt="">
+                    <img src="/images/works/CHODAI.webp" alt="">
+                    <img src="/images/works/edhiii-galaxy.webp" alt="">
+                    <img src="/images/works/fennel.webp" alt="">
+                    <img src="/images/works/kvibaba.webp" alt="">
+                    <img src="/images/works/mukade.webp" alt="">
+                    <img src="/images/works/onesonly.webp" alt="">
+                    <img src="/images/works/rakuten.webp" alt="">
+                    <img src="/images/works/rakura.webp" alt="">
+                    <img src="/images/works/soundsdeli.webp" alt="">
+                    <img src="/images/works/thecap.webp" alt="">
+                    <img src="/images/works/quest.webp" alt="">
+                </div>
+            </a>
+
+
+
+            <a href="works/works.html" class="to-works"><h2>WORKS</h2></a>
+
+            <a href="talent/talent.html" class="top-right">
+                <div class="top-parts part1">
+                    <div class="top-img"><img src="/images/cast/air.png" alt=""></div>
+                    <div class="top-info">
+                        <p class="info1">SEZAN</p>
+                    </div>
+                </div>
+
+                <div class="top-parts part2">
+                    <div class="top-info">
+                        <p class="info1">AGENT</p>
+                    </div>
+                    <div class="top-img"><img src="/images/cast/aoba.png" alt=""></div>
+                </div>
+
+                <div class="top-parts part3">
+                    <div class="top-info">
+                        <p class="info1">MANAGEMENT</p>
+                    </div>
+                    <div class="top-img"><img src="/images/cast/kotori.png" alt=""></div>
+                </div>
+
+                <div class="top-parts part4">
+                    <div class="top-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                    <div class="top-info">
+                        <p class="info1">CASTING</p>
+                    </div>
+                </div>
+            </a>
+
         </div>
 
-        <div id="image-1"></div>
+        <div class="about hr">
+            <div class="mission">
+                <div class="mission-contents">
+                    <p>Mission</p>
+                    <p>これからのエンターテインメントを<br>引っ張っていく存在に。</p>
+                    <p>私達SEZANは、<br>
+                    ざまざまな個性や経験をもっているクリエイターと共に<br>
+                        これからのエンターテインメントを創造していくことを<br>
+                        ミッションとし、活動しております。<br></p>
+                    <div class="mission-more-wrp">
+                        <a href="about/about.html">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </main>
 
+    <a href="contact/contact.php" class="contact-button">
+        <svg viewBox="0 0 100 100">
+            <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+            <text>
+              <textPath xlink:href="#circle">
+                CONTACT
+              </textPath>
+            </text>
+            <img src="/images/mail.png" alt="">
+        </svg>
+    </a>
+
     <div id="footer"></div>
 
     <script>
-        fetch("/agent/component/header/header.html")
+        fetch("component/header/header.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#header").innerHTML = data);
-        fetch("/agent/component/footer/footer.html")
+        fetch("component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
     </script>
+
+    <script src="/js/agent.js"></script>
 
 </body>
 </html>

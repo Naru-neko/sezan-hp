@@ -25,6 +25,18 @@ main {
     width: 70vw;
 }
 
+h1 {
+    position: fixed;
+    font-size: 8vmin;
+    margin: 0;
+    opacity: 0.5;
+    z-index: 100;
+    top: 30vh;
+    left: 0;
+    writing-mode: vertical-rl;
+    line-height: 0.6;
+}
+
 h2 {
     margin-top: 8vmin;
     font-size: 5vmin;
@@ -92,4 +104,8 @@ h2::after {
 
 .talent p {
     text-align: center;
+}
+
+.name {
+    margin: 1vmin;
 }

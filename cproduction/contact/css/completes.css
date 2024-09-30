@@ -1,7 +1,7 @@
 ::-webkit-scrollbar{
     width: 13px;
  }
- 
+
  ::-webkit-scrollbar-track{
     background-color: #ccc;
  }
@@ -46,6 +46,7 @@ h1{
 
 .contents{
     background-color: #f0f0f0;
+    height: 90vh;
     padding-left: 10vmin;
     padding-bottom: 3rem;
 }
@@ -65,7 +66,7 @@ h2{
 
 .contents p {
     margin-top: 2rem;
-} 
+}
 
 .contents p a {
     text-decoration: none;
