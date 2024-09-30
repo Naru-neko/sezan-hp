@@ -45,7 +45,7 @@ body{
     animation: bounceOutUp forwards 1s 4s linear;
 }
 
-.op-content > p {    
+.op-content > p {
     text-align: center;
     margin: 0;
     margin-bottom: 3rem;
@@ -96,6 +96,7 @@ main {
     background: none;
     text-decoration: none;
     animation: bounceIn forwards 1s 7s linear;
+    cursor: url(/images/cursor-more.png), default;
 }
 
 .title > a:hover{
