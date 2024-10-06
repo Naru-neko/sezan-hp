@@ -53,4 +53,7 @@ TODO
 - still 代わりに　イベント Produce
 - PRODUTION pagenation
 - agent side works image change
-- agent -> TalentPRODUCTION
+- agent -> TalentPRODUCTION ☑
+- contents -> event ☑
+- index cpro video change ☑
+- name sort shokugyou de wakeru

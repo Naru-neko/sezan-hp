@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="icon" href="/images/logo/sezan2.ico">
+    <title>EVENT | 聖傘-CreativePRODUCTION</title>
+</head>
+
+<body>
+    <div id="humburger"></div>
+
+    <h1>EVENT</h1>
+
+    <p class="head-title">Our EVENTS</p>
+
+    <main>
+        <div class="events">
+
+            <a href="" class="event" target="_blank">
+                <img src="/images/sample169.png" alt="">
+                <h2>hogehoge</h2>
+                <h3>Client</h3>
+                <h4>2024</h4>
+            </a>
+
+            <a href="" class="event" target="_blank">
+                <img src="/images/sample169.png" alt="">
+                <h2>hogehoge</h2>
+                <h3>Client</h3>
+                <h4>2024</h4>
+            </a>
+
+            <a href="" class="event" target="_blank">
+                <img src="/images/sample169.png" alt="">
+                <h2>hogehoge</h2>
+                <h3>Client</h3>
+                <h4>2024</h4>
+            </a>
+
+            <a href="" class="event" target="_blank">
+                <img src="/images/sample169.png" alt="">
+                <h2>hogehoge</h2>
+                <h3>Client</h3>
+                <h4>2024</h4>
+            </a>
+
+        </div>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("../component/header/humburger.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#humburger").innerHTML = data);
+        fetch("../component/footer/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('.event').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              }
+            });
+          });
+    </script>
+
+</body>
+</html>

@@ -403,7 +403,7 @@ section {
     cursor: url(/images/viewcontent.png), default;
 }
 
-.new-contents {
+.new-events {
     height: 100vh;
     background-color: #ffffff;
     display: flex;
@@ -412,7 +412,7 @@ section {
     align-items: center;
 }
 
-.contents {
+.events {
     position: relative;
     width: 100%;
     height: 100%;
@@ -432,20 +432,20 @@ swiper-slide {
     width: 45%;
 }
 
-.content {
+.event {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-.contents-info {
+.events-info {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.contents-info p {
+.events-info p {
     margin: 0;
     margin-bottom: 5vmin;
     font-size: 6vmax;
@@ -455,34 +455,34 @@ swiper-slide {
     color: #4b4b4b;
 }
 
-.content-info {
+.event-info {
     width: 100%;
     padding-left: 3vmin;
     padding-right: 3vmin;
 }
 
-.content-info p{
+.event-info p{
     margin: 0;
     margin-top: 1.5vmin;
 }
 
-.content-info p:nth-child(1) {
+.event-info p:nth-child(1) {
     font-size: 2vmax;
     font-weight: bolder;
     color: #000;
 }
 
-.content-info p:nth-child(2) {
+.event-info p:nth-child(2) {
     font-size: 1.5vmax;
     color: #6b6b6b;
 }
 
-.content a {
+.event a {
     height: 100%;
 }
 
-.content img {
-    cursor: url(/images/viewcontent.png), default;
+.event img {
+    cursor: url(/images/viewevent.png), default;
 }
 
 .sambnail {
