@@ -154,7 +154,7 @@ swiper-container {
   .vm p {
     font-size: 4vmax;
     transition: 0.5s;
-    font-weight: bolder;
+    font-weight: lighter;
   }
 
   .vm img {
