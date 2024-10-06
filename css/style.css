@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    background: #636363;
+    background: #181818;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
@@ -99,7 +99,7 @@ swiper-container {
   .mySwiper2 {
     height: 15%;
     box-sizing: border-box;
-    padding: 8px 0;
+    padding: 5px 0;
   }
 
   .mySwiper2 swiper-slide {
@@ -147,14 +147,20 @@ swiper-container {
     color: #ffffff;
   }
 
-  .vm:hover p {
-    scale: 1.1;
+  .vm:hover img {
+    transform: translate(30%);
   }
 
   .vm p {
     font-size: 4vmax;
     transition: 0.5s;
     font-weight: bolder;
+  }
+
+  .vm img {
+    width: 2.8vw;
+    margin-left: 2vw;
+    transition: 0.5s;
   }
 
   .main-wrp {
@@ -231,7 +237,7 @@ swiper-container {
     width: 17vw;
 }
 
-.preview img {
+.preview video {
     width: 100%;
     height: 100%;
     pointer-events: none;
