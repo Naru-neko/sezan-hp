@@ -55,51 +55,52 @@
             </div>
         </section>
 
+        <swiper-container init="false" class="mySwiper contents">
+            <swiper-slide>
+                <div class="content">
+                    <p>VIDEO PRODUCTION</p>
+                    <p>企画・撮影・編集、全てにおいてハイクオリティーな作品を提供。<br>
+                        3D映像はもちろんのこと、VHXからアニメーションまで<br>
+                        さまざまな作品を作り出します。</p>
+                </div>
+                <div class="pictures">
+                    <img src="/images/tmp/014438.png" alt="">
+                    <img src="/images/tmp/S__865337350_0.jpg" alt="">
+                    <img src="/images/tmp/vm.jpg" alt="">
+                </div>
+            </swiper-slide>
 
-        <section class="contents">
-            <div class="content">
-                <p>VIDEO PRODUCTION</p>
-                <p>企画・撮影・編集、全てにおいてハイクオリティーな作品を提供。<br>
-                    3D映像はもちろんのこと、VHXからアニメーションまで<br>
-                    さまざまな作品を作り出します。</p>
-            </div>
-            <div class="pictures">
-                <img src="/images/tmp/014438.png" alt="">
-                <img src="/images/tmp/S__865337350_0.jpg" alt="">
-                <img src="/images/tmp/vm.jpg" alt="">
-            </div>
-        </section>
+            <swiper-slide>
+                <div class="content">
+                    <p>MUSIC PRODUCTION</p>
+                    <p>楽曲制作からマスタリングまで全て行います。<br>
+                        アーティストやクライアント様と1から練り合わせ最高の作品を<br>
+                        作り上げます。
+                    </p>
+                </div>
+                <div class="pictures">
+                    <img src="/images/tmp/014643.png" alt="">
+                    <img src="/images/tmp/014709.png" alt="">
+                    <img src="/images/tmp/coolish.png" alt="">
+                </div>
+            </swiper-slide>
 
+            <swiper-slide>
+                <div class="content">
+                    <p>DANCE CHOREOGRAPHY</p>
+                    <p>コンテンポラリーから、バックダンサーなどの振り付けなど<br>
+                        さまざまなジャンルの振り付けを担当しております。
+                    </p>
+                </div>
+                <div class="pictures">
+                    <img src="/images/tmp/014924.png" alt="">
+                    <img src="/images/tmp/014945.png" alt="">
+                    <img src="/images/tmp/015007.png" alt="">
+                </div>
+            </swiper-slide>
 
-        <section class="contents">
-            <div class="content">
-                <p>MUSIC PRODUCTION</p>
-                <p>楽曲制作からマスタリングまで全て行います。<br>
-                    アーティストやクライアント様と1から練り合わせ最高の作品を<br>
-                    作り上げます。
-                </p>
-            </div>
-            <div class="pictures">
-                <img src="/images/tmp/014643.png" alt="">
-                <img src="/images/tmp/014709.png" alt="">
-                <img src="/images/tmp/coolish.png" alt="">
-            </div>
-        </section>
+        </swiper-container>
 
-
-        <section class="contents">
-            <div class="content">
-                <p>DANCE CHOREOGRAPHY</p>
-                <p>コンテンポラリーから、バックダンサーなどの振り付けなど<br>
-                    さまざまなジャンルの振り付けを担当しております。
-                </p>
-            </div>
-            <div class="pictures">
-                <img src="/images/tmp/014924.png" alt="">
-                <img src="/images/tmp/014945.png" alt="">
-                <img src="/images/tmp/015007.png" alt="">
-            </div>
-        </section>
 
 
         <section class="clients contents">
@@ -160,6 +161,28 @@
             }
             });
           });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+        var swiperEl = document.querySelector(".mySwiper");
+        Object.assign(swiperEl, {
+        grabCursor: true,
+        autoplay:true,
+        pagination: true,
+        effect: "creative",
+        creativeEffect: {
+            prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+            },
+            next: {
+            translate: ["100%", 0, 0],
+            },
+        },
+        });
+        swiperEl.initialize()
     </script>
 
 </body>
