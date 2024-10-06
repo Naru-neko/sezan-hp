@@ -49,4 +49,5 @@ TODO
 
 - about背景、黒縁無しで統一
 - still 人物　じゃないほうが良い
-- ULT　FIELD 使用禁止　
+- about service pagenation
+- still 代わりに　イベント Produce
