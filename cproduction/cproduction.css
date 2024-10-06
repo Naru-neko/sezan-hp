@@ -329,6 +329,7 @@ section {
     justify-content: center;
     align-items: center;
     padding-bottom: 15vh;
+    overflow: hidden;
 }
 
 .production-content {
