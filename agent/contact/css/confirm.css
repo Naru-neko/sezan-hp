@@ -10,12 +10,12 @@
     background-color: #17585d;
  }
 
-body{
-    background-color: #000000;
+ body{
+    background-color: #b8b8b8;
     width: auto;
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(204, 204, 204);
     font-family: 'Fira Code';
     font-weight: 300;
 }
@@ -30,18 +30,23 @@ form {
 }
 
 .h1-title{
-    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5rem;
 }
 
 h1{
     margin: 0;
-    width: 100%;
-    font-size: 7vmin;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 8vmin;
     font-weight: bolder;
     font-family: "Franklin Gothic";
-    color: rgb(255, 255, 255);
+    color: #0e0e0e;
 }
 
 h4{
@@ -89,23 +94,39 @@ h3{
     color: black;
 }
 
-@media screen and (max-width:480px) { /*phone*/
-    h1{
-        font-size: 12vmin;
+@media screen and (max-width:1250px) {
+    form {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    h2{
+    .section {
+        width: 90%;
+    }
+    h2 {
         font-size: 5vmin;
     }
-    .input-infos{
+    h3 {
+        margin-top: 4vmin;
         font-size: 4vmin;
     }
-    #contact-content{
-        font-size: 4vmin;
-    }
-    #submit{
-        font-size: 4vmin;
-    }
-    h3{
+    h4 {
         font-size: 3vmin;
+        margin-top: 2rem;
+    }
+    .buttons {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20vmin;
+        margin-bottom: 20vmin;
+    }
+    .back, .submit{
+        margin: 0;
+        width: 45%;
     }
 }

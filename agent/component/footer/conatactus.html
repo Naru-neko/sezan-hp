@@ -1,0 +1,74 @@
+<a href="/agent/contact/contact.php" class="contact-button">
+    <svg viewBox="0 0 100 100">
+        <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+        <text textLength="300">
+          <textPath xlink:href="#circle">
+            CONTACT CONTACT CONTACT
+          </textPath>
+        </text>
+        <img src="/images/hikouki.png" alt="">
+    </svg>
+</a>
+<style>
+    .contact-button {
+        width: 13vmin;
+        position: fixed;
+        bottom: 2vh;
+        right: 2vw;
+        margin: 0;
+        transition: 0.5s;
+        z-index: 100;
+        mix-blend-mode: difference;
+    }
+
+    .contact-button svg {
+        overflow: visible;
+        position: relative;
+        animation: rotate 10s infinite linear;
+    }
+
+    .contact-button path {
+        fill: none;
+        transition: 0.5s;
+    }
+
+    .contact-button text {
+        fill: #ffffff;
+        transition: 0.5s;
+    }
+
+    .contact-button img {
+        width: 7vmin;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        transform-origin: center ;
+    }
+
+    .contact-button:hover img {
+        animation: changeMail 1s infinite linear;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes changeMail {
+        0% {
+            transform: translate(0%, 0%);
+        }
+        100% {
+            transform: translate(10%, -10%);
+        }
+    }
+    @media screen and (max-width:1250px) {
+        #contact-button {
+            display: none;
+        }
+    }
+</style>

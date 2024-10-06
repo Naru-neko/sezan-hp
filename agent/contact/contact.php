@@ -17,7 +17,7 @@
 
     <form action="confirm.php" method="post">
 
-        <h3 id="info">制作や関するお問い合わせ、<br>
+        <h3 id="info">制作に関するお問い合わせ、<br>
         その他お問い合わせは下記のフォームよりご連絡ください。
         </h3>
 

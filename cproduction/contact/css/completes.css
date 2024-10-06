@@ -22,18 +22,12 @@ body{
 
 .h1-title{
     display: flex;
-    justify-content: baseline;
-    width: min-content;
+    justify-content: center;
+    width: 100%;
     align-items: center;
     position: relative;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5rem;
-}
-
-.h1-title img{
-    width: 4rem;
-    margin-left: 1rem;
 }
 
 h1{
@@ -74,3 +68,29 @@ h2{
     color: cornflowerblue;
 }
 
+@media screen and (max-width:1250px) {
+    form {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contents {
+        width: 90%;
+    }
+    .h1-title img {
+        width: 10vw;
+    }
+    h2 {
+        font-size: 5vmin;
+    }
+    h3 {
+        font-size: 4vmin;
+        width: 90%;
+    }
+    .contents p a {
+        font-size: 4vmin;
+    }
+}

@@ -1,7 +1,7 @@
 ::-webkit-scrollbar{
     width: 13px;
  }
- 
+
  ::-webkit-scrollbar-track{
     background-color: #ccc;
  }
@@ -31,18 +31,12 @@ form {
 
 .h1-title{
     display: flex;
-    justify-content: baseline;
-    width: min-content;
+    justify-content: center;
+    width: 100%;
     align-items: center;
     position: relative;
-    margin-top: 7rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5rem;
-}
-
-.h1-title img{
-    width: 4rem;
-    margin-left: 1rem;
 }
 
 h1{
@@ -99,23 +93,39 @@ h3{
     color: black;
 }
 
-@media screen and (max-width:480px) { /*phone*/
-    h1{
-        font-size: 12vmin;
+@media screen and (max-width:1250px) {
+    form {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    h2{
+    .section {
+        width: 90%;
+    }
+    h2 {
         font-size: 5vmin;
     }
-    .input-infos{
+    h3 {
+        margin-top: 4vmin;
         font-size: 4vmin;
     }
-    #contact-content{
-        font-size: 4vmin;
-    }
-    #submit{
-        font-size: 4vmin;
-    }
-    h3{
+    h4 {
         font-size: 3vmin;
+        margin-top: 2rem;
+    }
+    .buttons {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20vmin;
+        margin-bottom: 20vmin;
+    }
+    .back, .submit{
+        margin: 0;
+        width: 45%;
     }
 }

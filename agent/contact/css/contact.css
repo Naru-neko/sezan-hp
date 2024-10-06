@@ -19,7 +19,7 @@ body{
     width: auto;
     margin: 0;
     padding: 0;
-    color: rgb(31, 31, 31);
+    color: rgb(214, 214, 214);
     font-family: 'Fira Code';
     font-weight: 300;
 }
@@ -101,7 +101,6 @@ h2{
     margin-bottom: 1vmin;
     font-weight: 150;
     margin-left: 2rem;
-    color: #ffffff;
 }
 
 h3{
@@ -110,7 +109,6 @@ h3{
     margin: 0;
     margin-bottom: 5vmin;
     opacity: 0;
-    color: #ffffff;
     animation: fadeIn forwards 0.3s 1.2s linear;
 }
 
@@ -203,23 +201,43 @@ textarea{
     color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width:480px) { /*phone*/
-    h1{
-        font-size: 12vmin;
+@media screen and (max-width:1250px) {
+    form {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    h2{
-        font-size: 5vmin;
+    .section {
+        width: 90%;
     }
-    .input-infos{
+    h2 {
         font-size: 4vmin;
+        margin-left: 1rem;
     }
-    #contact-content{
-        font-size: 4vmin;
-    }
-    #submit{
-        font-size: 4vmin;
-    }
-    h3{
+    h3 {
+        margin-top: 4vmin;
         font-size: 3vmin;
+    }
+    .raw-name, .hurigana {
+        width: 100%;
+    }
+    input {
+        font-size: 4vmin;
+        width: 90%;
+    }
+    textarea {
+        font-size: 4vmin;
+        width: 90%;
+    }
+    .name {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #submit {
+        font-size: 4vmin;
+        margin-bottom: 14vmin;
     }
 }

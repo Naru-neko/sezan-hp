@@ -61,13 +61,6 @@
                 <h4>2023</h4>
             </a>
 
-            <a href="https://youtu.be/xUOQftZ1OEo" class="work" target="_blank">
-                <img src="/images/works/onesonly.webp" alt="">
-                <h2>ONE N' ONLY/“Get That (PT-BR ver.)”</h2>
-                <h3>Client</h3>
-                <h4>2023</h4>
-            </a>
-
             <a href="https://www.instagram.com/reel/Cqmbl3VANAX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" class="work" target="_blank">
                 <img src="/images/works/thecap.webp" alt="">
                 <h2>THE CAP x BELISHCLUB（NEWERA）</h2>
@@ -89,37 +82,37 @@
                 <h4>2022</h4>
             </a>
 
-            <a href="https://youtu.be/CLAbcySW4lI" class="work" target="_blank">
-                <img src="/images/works/billy.webp" alt="">
-                <h2>BILLY LAURENT - Heart Eyes feat. $HOR1 WINBOY & VILLSHANA</h2>
+            <a href="https://youtu.be/0Ldo7uf1wCc" class="work" target="_blank">
+                <img src="/images/works/JPTHEWAVY.webp" alt="">
+                <h2>JP THE WAVY - I'M FROM JAPAN</h2>
                 <h3>Client</h3>
                 <h4>2023</h4>
             </a>
 
-            <a href="https://youtu.be/ACDY2JDz1L4" class="work" target="_blank">
-                <img src="/images/works/CHODAI.webp" alt="">
-                <h2>Billy Laurent - CHODAI feat. VILLSHANA & $HOR1 WINBOY</h2>
+            <a href="https://www.sezan.tokyo/%E8%A4%87%E8%A3%BD-%E8%A4%87%E8%A3%BD-video" class="work" target="_blank">
+                <img src="/images/works/asap.webp" alt="">
+                <h2>ASAP CLUB WebCM</h2>
+                <h3>Client</h3>
+                <h4>2023</h4>
+            </a>
+
+            <a href="https://youtu.be/jukqELWSepk" class="work" target="_blank">
+                <img src="/images/works/SPERKLES.webp" alt="">
+                <h2>KAIKUN - Sparkles</h2>
+                <h3>Client</h3>
+                <h4>2023</h4>
+            </a>
+
+            <a href="" class="work" target="_blank">
+                <img src="/images/works/KAIKUN.webp" alt="">
+                <h2>KAIKUN - BedHead</h2>
                 <h3>Client</h3>
                 <h4>2022</h4>
             </a>
 
-            <a href="https://youtu.be/dB0-HNh5Lr0" class="work" target="_blank">
-                <img src="/images/works/fennel.webp" alt="">
-                <h2>Welcome to FENNEL</h2>
-                <h3>Client</h3>
-                <h4>2022</h4>
-            </a>
-
-            <a href="https://youtu.be/9QSe4tU--7Y" class="work" target="_blank">
-                <img src="/images/works/mukade.webp" alt="">
-                <h2>百足 - GAMEOVER</h2>
-                <h3>Client</h3>
-                <h4>2022</h4>
-            </a>
-
-            <a href="https://youtu.be/pY16g_cNGgA" class="work" target="_blank">
-                <img src="/images/works/getback.webp" alt="">
-                <h2>ralph - Get Back feat. JUMADIBA & Watson</h2>
+            <a href="https://www.youtube.com/watch?v=mZlWUb73Brs" class="work" target="_blank">
+                <img src="/images/works/kahohtokyo.webp" alt="">
+                <h2>KAHOH - TOKYO</h2>
                 <h3>Client</h3>
                 <h4>2023</h4>
             </a>
@@ -137,6 +130,18 @@
         fetch("../component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('.work').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              }
+            });
+          });
     </script>
 
 </body>

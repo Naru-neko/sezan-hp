@@ -69,6 +69,7 @@
             align-items: center;
             overflow: hidden;
             width: 100%;
+            z-index: 2;
         }
 
         .news-line div {
@@ -80,14 +81,15 @@
             white-space: nowrap;
             overflow: hidden;
             width: auto;
+            z-index: 3;
         }
 
         .news-line div:nth-child(odd) {
-            animation: scroll1 3s -1.5s linear infinite;
+            animation: scroll1 4s -2s linear infinite;
         }
 
         .news-line div:nth-child(even) {
-            animation: scroll2 3s linear infinite;
+            animation: scroll2 4s linear infinite;
         }
 
         @keyframes scroll1 {

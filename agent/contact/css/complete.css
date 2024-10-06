@@ -15,27 +15,29 @@ body{
     width: auto;
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(202, 202, 202);
     font-family: 'Fira Code';
     font-weight: 300;
 }
 
 .h1-title{
-    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 5rem;
 }
 
 h1{
     margin: 0;
-    font-size: 7vmin;
+    font-size: 8vmin;
     font-weight: bolder;
     font-family: "Franklin Gothic";
-    color: rgb(255, 255, 255);
 }
 
 .contents{
-    height: 70vh;
     background-color: #0e0e0e;
     height: 90vh;
     padding-left: 10vmin;
@@ -51,7 +53,6 @@ h2{
     font-size: 3vmin;
     font-weight: bolder;
     font-family: "Franklin Gothic";
-    color: rgb(255, 255, 255);
     border-bottom: solid 1px #d6d6d6;
 }
 
@@ -63,5 +64,32 @@ h2{
     text-decoration: none;
     font-size: 2vmin;
     color: cornflowerblue;
+}
+
+@media screen and (max-width:1250px) {
+    form {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contents {
+        width: 90%;
+    }
+    .h1-title img {
+        width: 10vw;
+    }
+    h2 {
+        font-size: 5vmin;
+    }
+    h3 {
+        font-size: 4vmin;
+        width: 90%;
+    }
+    .contents p a {
+        font-size: 4vmin;
+    }
 }
 

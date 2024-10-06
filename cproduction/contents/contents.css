@@ -39,7 +39,7 @@ h1 {
 main {
     margin: 0;
     width: 100%;
-    padding-top: 20vmin;
+    padding-top: 5vmin;
     padding-bottom: 20vmin;
 }
 
@@ -65,7 +65,7 @@ main {
 .pickup-content {
     margin: 0;
     width: 60vw;
-    cursor: url(/images/cursor-more.png), default;
+    cursor: url(/images/viewcontent.png), default;
     transition: transform 0.2s linear;
 }
 
@@ -111,8 +111,13 @@ h3 {
     margin-bottom: 10vmin;
     width: 50vmin;
     text-decoration: none;
-    cursor: url(/images/cursor-more.png), default;
+    cursor: url(/images/viewcontent.png), default;
     transition: transform 0.2s linear;
+    opacity: 0;
+}
+
+.fadeiner {
+    animation: fadeIn forwards 0.5s 0.3s linear;
 }
 
 .content img {
@@ -130,7 +135,7 @@ h3 {
     padding-top: 0.8rem;
 }
 
-.content-text p:nth-child(1) {
+.content-text {
     margin: 0;
     padding: 0;
     font-size: 2.5vmin;
@@ -143,8 +148,20 @@ h3 {
 
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1250px) {
+    .head-title {
+        margin-top: 20vmin;
+    }
     .content {
-        width: 40vmin;
+        width: 80%;
+    }
+    .pickup-content {
+        margin: 0;
+        width: 70vw;
+        cursor: url(/images/cursor-more.png), default;
+        transition: transform 0.2s linear;
+    }
+    .content-text p {
+        font-size: 5vmin;
     }
 }

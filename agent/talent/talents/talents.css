@@ -65,7 +65,7 @@ main {
 }
 
 h2 {
-    font-size: 320%;
+    font-size: 5vw;
     margin: 0;
     border-bottom: #ffffff solid 1px;
     margin-top: 2vmin;
@@ -87,7 +87,7 @@ h3 {
 }
 
 .sns img {
-    width: 1.3vmax;
+    width: 1.9vmax;
     margin-right: 1vw;
 }
 
@@ -108,9 +108,11 @@ h3 {
 
 .career-head {
     font-size: 2.5vmin;
+    width: fit-content;
     line-height: 0;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+    text-decoration: underline;
 }
 
 .career-head:nth-child(1) {
@@ -137,8 +139,28 @@ h4 {
     justify-content: left;
     align-items: flex-start;
     list-style: none;
+    margin-left: 1rem;
 }
 
-.career ul li p:nth-child(1){
-    margin-right: 1rem;
+@media screen and (max-width: 1250px) {
+    .prof-img {
+        width: 100%;
+        height: calc(80vw * 43/33);
+        margin-bottom: 6vmin;
+    }
+    .info {
+        width: 100%;
+    }
+    .info-content p {
+        font-size: 3vw;
+    }
+    .info-head {
+        width: calc(3vw * 6);
+    }
+    .career ul , .career ul li p {
+        width: calc(80vw - (3vmin * 6));
+    }
+    .profile {
+        flex-direction: column;
+    }
 }

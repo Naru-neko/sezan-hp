@@ -11,26 +11,48 @@
 </head>
 
 <body>
+
     <div id="header"></div>
+
     <div id="humburger"></div>
+    <div class="main-header-wrp" id="main-header-use">
+        <div class="main-header">
+            <div class="main-header-menu">
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#contents">Contents</a>
+            </div>
+        </div>
+    </div>
+
 
     <div id="top">
+        <div id="top-filter"></div>
+        <div id="top-filter2"></div>
         <video id="top-video" poster="" webkit-playsinline playsinline muted autoplay loop>
-            <source src="/videos/sample.mp4">
+            <source src="/videos/1801_1280x720.mov">
         </video>
         <div id="cname">
-            <div id="cname-sezan">
-                <p>sezan</p>
-                <p>聖傘</p>
-            </div>
-            <p>&nbsp;Creative</p>
-            <p>PRODUCTION</p>
+            <p>聖</p><p>傘</p><p>C</p><p>r</p><p>e</p><p>a</p><p>t</p><p>i</p><p>v</p><p>e</p><p>P</p><p>R</p><p>O</p><p>D</p><p>U</p><p>C</p><p>T</p><p>I</p><p>O</p><p>N</p>
         </div>
+
+        <a href="/agent/contact/contact.php" class="contact-button">
+            <svg viewBox="0 0 100 100">
+                <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
+                <text textLength="300">
+                    <textPath xlink:href="#circle">
+                    CONTACT CONTACT CONTACT
+                    </textPath>
+                </text>
+                <img src="/images/hikouki.png" alt="">
+            </svg>
+        </a>
+
     </div>
 
     <main>
 
-        <div class="main-header-wrp">
+        <div class="main-header-wrp" id="main-header-dummy">
             <div class="main-header">
                 <div class="main-header-menu">
                     <a href="#about">About</a>
@@ -40,7 +62,7 @@
             </div>
         </div>
 
-        <section></section>
+        <div class="interval"></div>
 
         <section class="about" id="about">
             <div class="about-content">
@@ -57,50 +79,57 @@
             </div>
         </section>
 
+        <div class="interval"></div>
 
-        <section></section>
+        <section class="production">
+            <div class="production-content">
+                <p>PRODUCTION</p>
+                <p>「今までにないクリエイティブ」を世界に発信していくために <br>
+                    さまざまなクリエイターと手を組み、作品を生み出します。<br>
+                    ミュージックビデオやCM、スチールなどの撮影、ダンスの振り付け、<br>
+                    アーティストや広告への楽曲制作などを行なっております。
+                </p>
+            </div>
+        </section>
+
+
+        <div class="interval"></div>
 
 
         <section class="new-works" id="works">
 
             <div class="works">
+
                 <div class="works-info">
                     <p>WORKS</p>
                 </div>
-                <div class="works-scroll">
-                    <div class="work"><a href="https://www.sezan.tokyo/%E8%A4%87%E8%A3%BD-%E8%A4%87%E8%A3%BD-video"><img class="sambnail" src="../images/works/asap.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/RYyvHs8-wks"><img class="sambnail" src="../images/works/bape.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/CLAbcySW4lI"><img class="sambnail" src="../images/works/billy.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/ACDY2JDz1L4"><img class="sambnail" src="../images/works/CHODAI.webp" alt=""></a></div>
+
+                <swiper-container class="mySwiper1" autoplay="true" loop="true" pagination="false" effect="cube" grab-cursor="true" cube-effect-shadow="true"
+                cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+                    <swiper-slide>
+                        <a href="https://www.youtube.com/watch?v=8a5Mfzb-M1Y" target="_blank"><img src="/images/works/edhiii-galaxy.webp" alt=""></a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://www.instagram.com/reel/Cqmbl3VANAX/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank"><img src="/images/works/thecap.webp" alt=""></a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://youtu.be/sx7SEw1tBv0" target="_blank"><img src="/images/works/quest.webp" alt=""></a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://www.youtube.com/watch?v=mZlWUb73Brs" target="_blank"><img src="/images/works/kahohtokyo.webp" alt=""></a>
+                    </swiper-slide>
+                </swiper-container>
+
+                <div class="more">
+                    <a href="/cproduction/works/works.html">View More</a>
                 </div>
+
             </div>
 
         </section>
 
 
-        <section class="new-works" id="works2">
-
-            <div class="works">
-                <div class="works-scroll">
-                    <div class="work"><a href="https://youtu.be/7jm2t_dlwgg"><img class="sambnail" src="../images/works/DJRYOW.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/8a5Mfzb-M1Y?si=4ssQK-dNXP3DojOv"><img class="sambnail" src="../images/works/edhiii-galaxy.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/dB0-HNh5Lr0"><img class="sambnail" src="../images/works/fennel.webp" alt=""></a></div>
-                    <div class="work"><a href="https://youtu.be/pY16g_cNGgA"><img class="sambnail" src="../images/works/getback.webp" alt=""></a></div>
-                </div>
-                <div class="works-info">
-                    <p>WORKS</p>
-                    <div class="more">
-                        <a href="/cproduction/works/works.html">View All</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <section></section>
-
-
+        <div class="interval"></div>
 
         <section class="new-contents" id="contents">
 
@@ -108,38 +137,72 @@
                 <div class="contents-info">
                     <p>CONTENTS</p>
                 </div>
-                <div class="contents-scroll">
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
+
+                <swiper-container class="mySwiper" autoplay="true" loop="true" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="-40" coverflow-effect-depth="100"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+
+                    <swiper-slide>
+                        <a class="content" href="" target="_blank">
+                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <div class="content-info">
+                                <p>CONTENTS HOGE</p>
+                                <p>START: 2023</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a class="content" href="" target="_blank">
+                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <div class="content-info">
+                                <p>CONTENTS HOGE</p>
+                                <p>START: 2023</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a class="content" href="" target="_blank">
+                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <div class="content-info">
+                                <p>CONTENTS HOGE</p>
+                                <p>START: 2023</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a class="content" href="" target="_blank">
+                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <div class="content-info">
+                                <p>CONTENTS HOGE</p>
+                                <p>START: 2023</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a class="content" href="" target="_blank">
+                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <div class="content-info">
+                                <p>CONTENTS HOGE</p>
+                                <p>START: 2023</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                </swiper-container>
+
+                <div class="more">
+                    <a href="/cproduction/contents/contents.html">View More</a>
                 </div>
 
             </div>
 
         </section>
 
-        <section class="new-contents" id="contents2">
-
-            <div class="contents">
-                <div class="contents-scroll">
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                    <div class="content"><a href=""><img class="sambnail" src="../images/sample169.png" alt=""></a></div>
-                </div>
-                <div class="contents-info">
-                    <p>CONTENTS</p>
-                    <div class="more">
-                        <a href="/cproduction/contents/contents.html">View All</a>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
+        <div class="interval"></div>
 
     </main>
 
@@ -155,6 +218,50 @@
         fetch("component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <script src="../js/luxy.js" charset="utf-8"></script>
+    <script charset="utf-8">
+        if(window.matchMedia('(min-width: 1250px)').matches){
+            luxy.init({
+                wrapper: '#luxy',
+                targets : '.luxy-el',
+                wrapperSpeed: 0.1
+                });
+        }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            if(window.matchMedia('(min-width: 1250px)').matches){
+                var targetTop = document.querySelector('main').offsetTop;
+                if(window.scrollY - 10 > targetTop){
+                    document.querySelector('#main-header-use').style.display = "flex";
+                    document.querySelector('#main-header-dummy').style.display = "none";
+                }
+                else if(window.scrollY < targetTop){
+                    document.querySelector('#main-header-use').style.display = "none";
+                    document.querySelector('#main-header-dummy').style.display = "flex";
+                }
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('section').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              }
+              else {
+                $(this).removeClass('fadeiner');
+            }
+            });
+          });
     </script>
 
 </body>

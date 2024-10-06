@@ -11,8 +11,7 @@
 <body>
 
     <div class="h1-title">
-        <h1>CONTACT</h1>
-        <img src="../../images/mail.png" alt="">
+        <h1>確認</h1>
     </div>
 
     <form action="complete.php" method="post">
@@ -62,9 +61,10 @@
         <input type="hidden" name="title" value="<?php echo $_POST["title"]; ?>">
         <input type="hidden" name="inquiry" value="<?php echo $_POST["inquiry"]; ?>">
 
-        <button class="button back" type="button" onclick="history.back()">戻る</button>
-
-        <input class="button submit" type="submit" value="送信" onclick="">
+        <div class="buttons">
+            <button class="button back" type="button" onclick="history.back()">戻る</button>
+            <input class="button submit" type="submit" value="送信" onclick="">
+        </div>
 
     </form>
 

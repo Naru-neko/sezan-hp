@@ -61,9 +61,10 @@
         <input type="hidden" name="title" value="<?php echo $_POST["title"]; ?>">
         <input type="hidden" name="inquiry" value="<?php echo $_POST["inquiry"]; ?>">
 
-        <button class="button back" type="button" onclick="history.back()">戻る</button>
-
-        <input class="button submit" type="submit" value="送信" onclick="">
+        <div class="buttons">
+            <button class="button back" type="button" onclick="history.back()">戻る</button>
+            <input class="button submit" type="submit" value="送信" onclick="">
+        </div>
 
     </form>
 

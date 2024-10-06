@@ -48,7 +48,7 @@ h2::after {
     margin-left: 1rem;
     font-size: 2.3vmin;
     text-shadow: none;
-    color: #d4d4d4;
+    color: #b1b1b1;
 }
 
 #h2-male::after {
@@ -72,17 +72,27 @@ h2::after {
 }
 
 .talent {
-    width: 23%;
+    width: 31%;
     margin: 1%;
     text-decoration: none;
     color: #c2c2c2;
     font-size: 1.5vw;
+    opacity: 0;
+}
+
+.fadeiner {
+    animation: fadeIn forwards 0.5s 0.3s linear;
 }
 
 .talent-img {
     width: 100%;
     position: relative;
     overflow: hidden;
+    transition: 0.3s;
+}
+
+.talent-img:hover {
+    box-shadow: #ffffff 0px 0px 13px;
 }
 
 .talent-img img {
@@ -108,4 +118,15 @@ h2::after {
 
 .name {
     margin: 1vmin;
+}
+
+@media screen and (max-width: 1250px) {
+    .talent {
+        width: 40%;
+        margin: 5%;
+    }
+    .talent p {
+        white-space: nowrap;
+        font-size: 3vmin;
+    }
 }

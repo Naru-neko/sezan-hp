@@ -139,5 +139,17 @@
             .then((data) => document.querySelector("#footer").innerHTML = data);
     </script>
 
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('.work').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              }
+            });
+          });
+    </script>
+
 </body>
 </html>

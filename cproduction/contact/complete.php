@@ -39,8 +39,7 @@
   <body>
     <div id="humburger"></div>
     <div class="h1-title">
-        <h1>CONTACT</h1>
-        <img src="../../images/mail.png" alt="">
+        <h1>送信完了</h1>
     </div>
     <div class="contents">
       <h2><?php echo $message1; ?></h2>

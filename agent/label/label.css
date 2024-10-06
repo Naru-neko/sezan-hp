@@ -14,6 +14,7 @@ body{
 main {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 10vmin;
@@ -35,4 +36,11 @@ h2 {
     font-size: 7vw;
     opacity: 0.8;
     text-shadow: #4b4b4bb6 1rem 1rem 1rem;
+    font-weight: lighter;
+}
+
+h3{
+    font-size: 4vw;
+    font-weight: lighter;
+    opacity: 0.8;
 }

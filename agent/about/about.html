@@ -27,9 +27,10 @@
             </div>
         </div>
 
+        <div class="interval"></div>
 
         <div class="section management">
-            <div class="management-contents">
+            <div class="content">
                 <p>MANAGEMENT</p>
                 <p>SEZANは「一人一人の個性」に着目し、<br>
                     それを生かしながら活躍できるメンバー、<br>
@@ -37,16 +38,47 @@
                     ハイクオリティなタレントを抱えております。
                 </p>
             </div>
-        </div>
-
-
-        <div class="section casting">
-            <div class="casting-contents">
-                <p>CASTING</p>
-                <p>SEZANは、外国人モデルや <br> ダンサーなどのキャスティングに特化しており、 <br> 肌広いジャンルに対応します。</p>
+            <div class="pictures">
+                <img src="/images/cast/air.png" alt="">
+                <img src="/images/cast/aoba.png" alt="">
+                <img src="/images/cast/nozomi.png" alt="">
             </div>
         </div>
 
+        <div class="interval"></div>
+
+        <div class="section casting">
+            <div class="content">
+                <p>TALENT CASTING</p>
+                <p>ダンサーやハーフモデルはもちろんの事、<br>
+                    高校生や奇抜系などもオールジャンルで<br>
+                    キャスティングしております。</p>
+            </div>
+            <div class="pictures">
+                <img src="/images/works/rakuten.webp" alt="">
+                <img src="/images/works/quest.webp" alt="">
+                <img src="/images/tmp/034212.png" alt="">
+            </div>
+        </div>
+
+        <div class="interval"></div>
+
+        <div class="section casting">
+            <div class="content">
+                <p>INFLUENCER CASTING</p>
+                <p>Z世代に人気のあるインフルエンサーや<br>
+                    他事務所とのコネクションもあり<br>
+                    様々な方面のキャスティングを担当しております。<br>
+                    </p>
+            </div>
+            <div class="pictures">
+                <img src="/images/tmp/034236.png" alt="">
+                <img src="/images/tmp/034304.png" alt="">
+                <img src="/images/tmp/034338.png" alt="">
+            </div>
+        </div>
+
+        <div class="interval"></div>
 
         <div class="section clients">
             <p>Clients</p>
@@ -60,6 +92,7 @@
             </div>
         </div>
 
+        <div class="interval"></div>
 
         <div class="section detail">
             <div class="info-wrp">
@@ -84,6 +117,8 @@
 
     </main>
 
+    <div id="contact-button"></div>
+
     <div id="footer"></div>
 
     <script>
@@ -93,6 +128,23 @@
         fetch("../component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
+        fetch("../component/footer/conatactus.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#contact-button").innerHTML = data);
+    </script>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('.section').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              } else {
+                $(this).removeClass('fadeiner');
+            }
+            });
+          });
     </script>
 
 </body>

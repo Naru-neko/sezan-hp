@@ -2,7 +2,6 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
 }
 
 body{
@@ -20,7 +19,7 @@ main {
 .top {
     margin: 0;
     font-size: 10vmin;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -72,10 +71,18 @@ main {
     }
 }
 
-.scroll-imgs img {
+.scroll-imgs div {
     width: 100%;
     height: 100%;
     margin-bottom: 3vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.scroll-imgs img {
+    width: 100%;
+    height: 100%;
 }
 
 .to-works {
@@ -135,14 +142,17 @@ main {
     margin: 0;
 }
 
-.hr {
+section {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+}
+
+.about {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .mission-contents {
@@ -150,12 +160,15 @@ main {
     padding: 5vmin;
 }
 
-.mission-contents p, .mission-more-wrp a {
+.mission-text {
     opacity: 0;
-    animation: fadeIn 0.5s 2s linear forwards;
 }
 
-.mission-contents::after{
+.fadeiner, .fadeiner4 {
+    animation: fadeIn 0.5s 0.5s linear forwards;
+}
+
+.mission-contents-after{
     content: "";
     position: absolute;
     top: calc(55% - 5vw);
@@ -164,11 +177,18 @@ main {
     height: 5vw;
     border-top: #e9e9e9 1px solid;
     border-left: #e9e9e9 1px solid;
-    animation: toUpLeft 1s 0.7s linear forwards;
     opacity: 0;
 }
 
-.mission-contents::before{
+.inview-after {
+    animation: toUpLeft 1s 0.7s linear forwards;
+}
+
+.inview-before {
+    animation: toBottomRight 1s 0.7s linear forwards;
+}
+
+.mission-contents-before{
     content: "";
     position: absolute;
     bottom: calc(55% - 5vw);
@@ -177,7 +197,6 @@ main {
     height: 5vw;
     border-bottom: #e9e9e9 1px solid;
     border-right: #e9e9e9 1px solid;
-    animation: toBottomRight 1s 0.7s linear forwards;
     opacity: 0;
 }
 
@@ -214,7 +233,7 @@ main {
 }
 
 .mission-contents p:nth-child(1) {
-    font-size: 5vmin;
+    font-size: 4vmin;
     font-weight: lighter;
     margin: 0;
 }
@@ -241,13 +260,14 @@ main {
     justify-content: right;
     align-items: center;
     margin: 0;
+    opacity: 0;
 }
 
 .mission-more-wrp a {
     text-decoration: none;
     font-size: 2vmin;
     white-space: nowrap;
-    padding: 1rem;
+    padding: 2vmin;
     width: min-content;
     border-radius: 3vmin;
     border: #d6d6d6 2px solid;
@@ -260,55 +280,227 @@ main {
     color: #0e0e0e;
 }
 
-.contact-button {
-    width: 13vmin;
-    position: fixed;
-    bottom: 2vh;
-    right: 2vw;
-    margin: 0;
-    transition: 0.5s;
-    z-index: 100;
-}
-
-.contact-button svg {
-    overflow: visible;
+.management {
     position: relative;
 }
 
-.contact-button path , .contact-button text {
-    fill: #ffffff;
+.management-wrp {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    opacity: 0;
+}
+
+.m-inner {
+    animation: fadeIn 0.5s 0.3s linear forwards;
+}
+
+.management-text {
+    width: 40%;
+    padding: 7vmin;
+    position: relative;
+}
+
+.management-text p:nth-child(1) {
+    font-size: 4vw;
+}
+
+.management-text p:nth-child(2) {
+    font-size: 1.5vw;
+}
+
+.management-text::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5vw;
+    height: 5vw;
+    border-top: #ffffff 1px solid;
+    border-left: #ffffff 1px solid;
+}
+
+.management-text::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5vw;
+    height: 5vw;
+    border-bottom: #ffffff 1px solid;
+    border-right: #ffffff 1px solid;
+}
+
+.management-imgs {
+    width: 50%;
+    height: 70%;
+}
+
+swiper-container {
+    width: 70%;
+}
+
+swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.management-more-wrp {
+    z-index: 100;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0;
+}
+
+.management-more-wrp a {
+    text-decoration: none;
+    font-size: 2vmin;
+    white-space: nowrap;
+    padding: 2vmin;
+    width: min-content;
+    border-radius: 3vmin;
+    border: #d6d6d6 2px solid;
+    color: #d6d6d6;
     transition: 0.5s;
 }
 
-.contact-button img {
-    width: 6vmin;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-origin: center ;
+.management-more-wrp a:hover {
+    background-color: #d6d6d6;
+    color: #0e0e0e;
 }
 
-.contact-button:hover {
-    transform: scale(1.1);
+.new-works {
+    height: 100vh;
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vmin;
+    opacity: 0;
 }
 
-.contact-button:hover path, .contact-button:hover text {
-    fill: #79cbce;
+.works-inv {
+    animation: fadeIn 0.5s 0.3s linear forwards;
 }
 
-.contact-button:hover img {
-    animation: changeMail 1.5s infinite linear;
+.works {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
+.mySwiper1 {
+    width: 100%;
+}
 
-@keyframes changeMail {
-    0% {
-        content: normal;
-    }
-    100% {
-        content: url(/images/mail-open.png);
-    }
+.mySwiper1 swiper-slide {
+    width: 35%;
+}
+
+.work {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.works-info {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.works-info p {
+    margin: 0;
+    margin-bottom: 5vmin;
+    font-size: 6vw;
+    margin-right: 10vw;
+    font-weight: bolder;
+    text-align: right;
+    color: #e7e7e7;
+}
+
+.work-info {
+    width: 100%;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+}
+
+.work-info p{
+    margin: 0;
+    margin-top: 1.5vmin;
+}
+
+.work-info p:nth-child(1) {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #d1d1d1;
+}
+
+.work-info p:nth-child(2) {
+    font-size: 1.6vw;
+    color: #6b6b6b;
+}
+
+.work a {
+    height: 100%;
+}
+
+.work img {
+    cursor: url(/images/viewcontent.png), default;
+}
+
+.sambnail {
+    width: 100%;
+    margin: 0;
+}
+
+.works-more-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    margin-top: 5vmin;
+}
+
+.works-more-wrp a {
+    text-decoration: none;
+    font-size: 2vmin;
+    white-space: nowrap;
+    padding: 2vmin;
+    width: min-content;
+    border-radius: 3vmin;
+    border: #d6d6d6 2px solid;
+    color: #d6d6d6;
+    transition: 0.5s;
+    margin-left: 5vw;
+}
+
+.works-more-wrp a:hover {
+    background-color: #d6d6d6;
+    color: #0e0e0e;
 }
 
 @media screen and (max-width:500px) { /*phone*/
@@ -318,25 +510,12 @@ main {
 @media screen and (max-width:1250px) {
     .top {
         height: auto;
-        flex-direction: column-reverse;
     }
     .top-left {
-        height: 60vh;
-        width: 100vw;
-        margin-bottom: 30vh;
+        display: none;
     }
     .to-works{
         display: block;
-    }
-
-    h2 {
-        display: block;
-        font-size: 8vmin;
-        margin: 0;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        width: 100vw;
-        text-align: center;
     }
     .scroll-imgs {
         width: 70vw;
@@ -344,7 +523,6 @@ main {
     .top-right {
         width: 100vw;
         border-left: none;
-        margin-bottom: 20vh;
         border-bottom: #ffffff 1px solid;
     }
     .top-info p {
@@ -356,14 +534,35 @@ main {
     .part2 .top-info p, .part3 .top-info p {
         transform: rotateZ(180deg);
     }
-
     .mission-more-wrp a {
         padding: 1vmin;
         font-size: 3vmin;
     }
+    .management-text p:nth-child(1) {
+        font-size: 6vw;
+    }
 
-    .contact-button {
-        display: none;
+    .management-text p:nth-child(2) {
+        font-size: 2vw;
+    }
+    .management-wrp {
+        flex-direction: column;
+    }
+    .management-text {
+        margin-bottom: 5vmin;
+        width: 80%;
+    }
+    .management-imgs {
+        width: 100%;
+    }
+    .mySwiper1 swiper-slide {
+        width: 70%;
+    }
+    .management-more-wrp a {
+        font-size: 4vmin;
+    }
+    .works-more-wrp a {
+        font-size: 4vmin;
     }
 }
 
