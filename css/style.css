@@ -117,12 +117,12 @@ swiper-container {
   }
 
   .sub-production, .main-production {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   .sub-agent, .main-agent {
-    background-color: #ffffff;
+    background-color: #000000;
   }
 
   .main-production, .main-agent {
@@ -140,11 +140,11 @@ swiper-container {
   }
 
   .viewmore {
-    color: #fff;
+    color: #000000;
   }
 
   .viewmore2 {
-    color: #000;
+    color: #ffffff;
   }
 
   .vm:hover p {
@@ -180,7 +180,7 @@ swiper-container {
   .main-title {
     font-size: 5vw;
     font-weight: bolder;
-    color: #d3d3d3;
+    color: #272727;
     text-align: left;
     top: 0;
     right: 6vmin;
@@ -213,18 +213,18 @@ swiper-container {
 .preview {
     width: 43vw;
     height: calc(43vw * 9/16);
-    border: 0.4vw solid #ffffff;
+    border: 0.4vw solid #000000;
     z-index: 11;
     rotate: z -11deg;
     transform: translateY(20%);
 }
 
 .main-agent .main-title {
-    color: #000000;
+    color: #c7c7c7;
 }
 
 .main-agent .preview {
-    border: 0.4vw solid #000000;
+    border: 0.4vw solid #ffffff;
 }
 
 .main-agent .info div img {
@@ -235,6 +235,10 @@ swiper-container {
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+.main-agent .info div p {
+    color: #ffffff;
 }
 
 @media screen and (max-width:1250px) {
