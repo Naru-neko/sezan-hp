@@ -80,6 +80,7 @@ h2, h3, h4 {
 .event img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
     transition: 0.5s;
 }
 

@@ -80,6 +80,7 @@ h2, h3, h4 {
 .work img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
     transition: 0.5s;
 }
 
@@ -95,8 +96,8 @@ h2 {
 
 h3 {
     margin: 0;
-    color: #d3d3d3;
-    font-size: 1.5vmin;
+    color: #7a7a7a;
+    font-size: 1.8vmin;
 }
 
 h4 {
