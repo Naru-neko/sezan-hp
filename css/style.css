@@ -172,7 +172,13 @@ swiper-container {
   }
 
   .main-right {
-    height: 90%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    position: relative;
+    z-index: 11;
   }
 
   .logo {
@@ -221,8 +227,6 @@ swiper-container {
     height: calc(43vw * 9/16);
     border: 0.4vw solid #000000;
     z-index: 11;
-    rotate: z -11deg;
-    transform: translateY(20%);
 }
 
 .main-agent .main-title {
@@ -247,17 +251,18 @@ swiper-container {
     color: #ffffff;
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width:800px) {
     .main-wrp {
         flex-direction: column;
     }
     .preview {
-        width: 80vw;
-        height: calc(80vw * 9/16);
-        transform: translateY(10vh);
+        width: 94vw;
+        height: calc(94vw * 9/16);
     }
     .main-right {
         margin-top: 5vh;
+        align-items: center;
+        justify-content: space-between;
     }
     .main-title {
         text-align: center;
