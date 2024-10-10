@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="talent.css">
+    <link rel="icon" href="/images/logo/sezan2.ico">
+    <title>聖傘 | TALENT</title>
+</head>
+<body>
+
+    <header><div id="header"></div></header>
+
+    <h1>TALENT</h1>
+
+    <p class="head-title">TALENTS</p>
+
+    <main>
+        <div id="main-area">
+
+            <ul class="talents">
+
+                <li class="talent">
+                    <a href="talents/sena.html" title="sena">
+                        <div class="talent-img"><img src="/images/cast/sena.jpg" alt=""></div>
+                        <p class="name">Sena Umeaguku</p>
+                        <p class="job">MODEL/DANCER</p>
+                    </a>
+                </li>
+
+                <li class="talent">
+                    <a href="talents/aoba.html" title="aoba">
+                        <div class="talent-img"><img src="/images/cast/aoba.png" alt=""></div>
+                        <p class="name">AOBA</p>
+                        <p class="job">ACTOR/MODEL</p>
+                    </a>
+                </li>
+
+                <li class="talent">
+                    <a href="talents/nozomi.html" title="nozomi">
+                        <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
+                        <p class="name">NOZOMI</p>
+                        <p class="job">ACTOR/MODEL</p>
+                    </a>
+                </li>
+
+                <li class="talent">
+                    <a href="talents/air.html" title="air">
+                        <div class="talent-img"><img src="/images/cast/air.png" alt=""></div>
+                        <p class="name">AIR</p>
+                        <p class="job">DANCER</p>
+                    </a>
+                </li>
+
+                <li class="talent">
+                    <a href="talents/kotori.html" title="kotori">
+                        <div class="talent-img"><img src="/images/cast/kotori.png" alt=""></div>
+                        <p class="name">KOTORI</p>
+                        <p class="job">DANCER/MODEL</p>
+                    </a>
+                </li>
+
+                <li class="talent">
+                    <a href="talents/uwa.html" title="uwa">
+                        <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
+                        <p class="name">UWA(AGENT)</p>
+                        <p class="job">DANCER/MODEL</p>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </main>
+
+
+
+
+    <div id="footer"></div>
+
+    <script>
+        fetch("/tproduction/component/header/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+        fetch("/tproduction/component/footer/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery.inview.min.js"></script>
+    <script>
+        $(function() {
+            $('.talent').on('inview', function(event, isInView) {
+              if (isInView) {
+                $(this).addClass('fadeiner');
+              }
+            });
+          });
+    </script>
+
+    <script>
+        $(function() {
+
+            var arr = new Array();
+
+            $('.talent').each(function(i){
+              arr[i] = new Object();
+              arr[i].key = $(":first-child", this).attr('title');
+              arr[i].value = $(this);
+            });
+
+            window.onload = function() {
+              arr.sort(sortDesc);
+              for(i = 0; i < arr.length; i++){
+                $(".talents").append(arr[i].value);
+              }
+            };
+
+            var sortDesc = function(a, b) {
+              return a.key.localeCompare(b.key);
+            }
+        });
+    </script>
+
+</body>
+</html>

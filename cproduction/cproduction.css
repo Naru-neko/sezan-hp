@@ -488,6 +488,7 @@ section {
 .event-info p:nth-child(2) {
     font-size: 1.5vmax;
     color: #6b6b6b;
+    display: none;
 }
 
 .event a {
@@ -495,7 +496,7 @@ section {
 }
 
 .event img {
-    cursor: url(/images/viewevent.png), default;
+    cursor: url(/images/viewcontent.png), default;
 }
 
 .sambnail {
