@@ -18,11 +18,22 @@
     <p class="head-title">TALENTS</p>
 
     <main>
+
         <div id="main-area">
+
+            <div id="job-btns">
+                <div class="btn"><a data-tab="all" class="border"><p>ALL</p></a></div>
+                <div class="btn"><a data-tab="actor" class="border"><p>ACTOR</p></a></div>
+                <div class="btn"><a data-tab="model" class="border"><p>MODEL</p></a></div>
+                <div class="btn"><a data-tab="dancer" class="border"><p>DANCER</p></a></div>
+                <div class="btn"><a data-tab="dj" class="border"><p>DJ</p></a></div>
+                <div class="btn"><a data-tab="artist" class="border"><p>ARTIST</p></a></div>
+                <div class="btn"><a data-tab="creator"><p>CREATOR</p></a></div>
+            </div>
 
             <ul class="talents">
 
-                <li class="talent">
+                <li class="talent all model dancer actor" id="sena">
                     <a href="talents/sena.html" title="sena">
                         <div class="talent-img"><img src="/images/cast/sena.jpg" alt=""></div>
                         <p class="name">Sena Umeaguku</p>
@@ -30,7 +41,7 @@
                     </a>
                 </li>
 
-                <li class="talent">
+                <li class="talent all actor model creator" id="aoba">
                     <a href="talents/aoba.html" title="aoba">
                         <div class="talent-img"><img src="/images/cast/aoba.png" alt=""></div>
                         <p class="name">AOBA</p>
@@ -38,7 +49,7 @@
                     </a>
                 </li>
 
-                <li class="talent">
+                <li class="talent all actor model creator" id="nozomi">
                     <a href="talents/nozomi.html" title="nozomi">
                         <div class="talent-img"><img src="/images/cast/nozomi.png" alt=""></div>
                         <p class="name">NOZOMI</p>
@@ -46,7 +57,7 @@
                     </a>
                 </li>
 
-                <li class="talent">
+                <li class="talent all dancer creator" id="air">
                     <a href="talents/air.html" title="air">
                         <div class="talent-img"><img src="/images/cast/air.png" alt=""></div>
                         <p class="name">AIR</p>
@@ -54,7 +65,7 @@
                     </a>
                 </li>
 
-                <li class="talent">
+                <li class="talent all dancer model" id="kotori">
                     <a href="talents/kotori.html" title="kotori">
                         <div class="talent-img"><img src="/images/cast/kotori.png" alt=""></div>
                         <p class="name">KOTORI</p>
@@ -62,7 +73,7 @@
                     </a>
                 </li>
 
-                <li class="talent">
+                <li class="talent all dancer model actor dj" id="uwa">
                     <a href="talents/uwa.html" title="uwa">
                         <div class="talent-img"><img src="/images/cast/uwa.png" alt=""></div>
                         <p class="name">UWA(AGENT)</p>
@@ -76,10 +87,23 @@
 
     </main>
 
-
-
-
     <div id="footer"></div>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function() {
+            $('#job-btns .btn:first-of-type a').addClass("is-active");
+            $('.all').addClass("is-active");
+            $('#job-btns a').click(function(){
+                $('#job-btns .btn a').removeClass("is-active");
+                $(this).addClass("is-active");
+                $('.talent').removeClass("is-active");
+                $('.' + $(this).attr('data-tab')).addClass("is-active");
+                return false;
+            });
+        });
+    </script>
 
     <script>
         fetch("/tproduction/component/header/header.html")
@@ -88,20 +112,17 @@
         fetch("/tproduction/component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
     </script>
 
-    <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/jquery.inview.min.js"></script>
     <script>
         $(function() {
             $('.talent').on('inview', function(event, isInView) {
               if (isInView) {
                 $(this).addClass('fadeiner');
-              }
+              } else {
+                $(this).removeClass('fadeiner');
+            }
             });
           });
     </script>

@@ -33,7 +33,8 @@
             <source src="/videos/HP_HD_02.mp4">
         </video>
         <div id="cname">
-            <p>聖</p><p>傘</p><p>C</p><p>r</p><p>e</p><p>a</p><p>t</p><p>i</p><p>v</p><p>e</p><p>P</p><p>R</p><p>O</p><p>D</p><p>U</p><p>C</p><p>T</p><p>I</p><p>O</p><p>N</p>
+            <p>聖</p><p>傘</p><p>C</p><p>r</p><p>e</p><p>a</p><p>t</p><p>i</p><p>v</p><p>e</p>
+            <p>P</p><p>R</p><p>O</p><p>D</p><p>U</p><p>C</p><p>T</p><p>I</p><p>O</p><p>N</p>
         </div>
 
         <a href="/agent/contact/contact.php" class="contact-button">
@@ -80,14 +81,48 @@
         <div class="interval"></div>
 
         <section class="production">
-            <div class="production-content">
-                <p>PRODUCTION</p>
-                <p>「今までにないクリエイティブ」を世界に発信していくために <br>
-                    さまざまなクリエイターと手を組み、作品を生み出します。<br>
-                    ミュージックビデオやCM、スチールなどの撮影、ダンスの振り付け、<br>
-                    アーティストや広告への楽曲制作などを行なっております。
-                </p>
-            </div>
+            <swiper-container init="false" class="mySwiper4">
+
+                <swiper-slide class="production-content">
+                    <p>PRODUCTION</p>
+                    <p>「今までにないクリエイティブ」を世界に発信していくために <br>
+                        さまざまなクリエイターと手を組み、作品を生み出します。<br>
+                        ミュージックビデオやCM、スチールなどの撮影、ダンスの振り付け、<br>
+                        アーティストや広告への楽曲制作などを行なっております。
+                    </p>
+                </swiper-slide>
+
+                <swiper-slide class="production-content">
+                    <p>VIDEO<br>PRODUCTION</p>
+                    <p>企画・撮影・編集、全てにおいてハイクオリティーな作品を提供。<br>
+                        3D映像はもちろんのこと、VHXからアニメーションまで<br>
+                        さまざまな作品を作り出します。</p>
+                </swiper-slide>
+
+                <swiper-slide class="production-content">
+                    <p>MUSIC<br>PRODUCTION</p>
+                    <p>楽曲制作からマスタリングまで全て行います。<br>
+                        アーティストやクライアント様と1から練り合わせ<br>
+                        最高の作品を作り上げます。
+                    </p>
+                </swiper-slide>
+
+                <swiper-slide class="production-content">
+                    <p>DANCE<br>CHOREOGRAPHY</p>
+                    <p>コンテンポラリーから、バックダンサーなどの<br>
+                        振り付けなど、さまざまなジャンルの<br>
+                        振り付けを担当しております。
+                    </p>
+                </swiper-slide>
+
+                <swiper-slide class="production-content">
+                    <p>EVENT<br>PRODUCTION</p>
+                    <p>あああああああああああああああああああああ<br>
+                        ああああああああああああああああああああああああ
+                    </p>
+                </swiper-slide>
+
+            </swiper-container>
         </section>
 
 
@@ -250,6 +285,28 @@
             }
             });
           });
+    </script>
+
+    <script>
+        var swiper4El = document.querySelector(".mySwiper4");
+        Object.assign(swiper4El, {
+            grabCursor: true,
+            autoplay: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                shadow: true,
+                translate: [0, 0, -800],
+                rotate: [180, 0, 0],
+                },
+                next: {
+                shadow: true,
+                translate: [0, 0, -800],
+                rotate: [-180, 0, 0],
+                },
+            },
+        });
+        swiper4El.initialize()
     </script>
 
 </body>
