@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: "segoe ui",meiryo,"yu gothic","hiragino kaku gothic pron",sans-serif;
 }
 
 main {
@@ -170,7 +171,7 @@ h2 {
     left: 140%;
     opacity: 0;
     width: auto;
-    animation: flash 5s 7s linear infinite;
+    animation: flash 5s 1s linear infinite;
 }
 
 .tpro .touch {
@@ -271,14 +272,9 @@ h2 {
     opacity: 1;
 }
 
-#drawer-input:checked ~ .humburger div:nth-child(1) {
-    rotate: -45deg;
-    background-color: #000000;
-    top: 50%;
-}
-
+#drawer-input:checked ~ .humburger div:nth-child(1),
 #drawer-input:checked ~ .humburger div:nth-child(2) {
-    rotate: -45deg;
+    rotate: -405deg;
     background-color: #000000;
     top: 50%;
 }
@@ -296,18 +292,12 @@ h2 {
     opacity: 1;
 }
 
-#drawer-input2:checked ~ .humburger div:nth-child(1) {
-    rotate: -45deg;
-    background-color: #ffffff;
-    top: 50%;
-}
-
+#drawer-input2:checked ~ .humburger div:nth-child(1),
 #drawer-input2:checked ~ .humburger div:nth-child(2) {
-    rotate: -45deg;
+    rotate: -405deg;
     background-color: #ffffff;
     top: 50%;
 }
-
 
 .preview {
     position: absolute;
@@ -322,6 +312,8 @@ h2 {
 }
 
 video {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;

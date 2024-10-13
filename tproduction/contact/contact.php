@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="/tproduction/tproglobal.css">
     <link rel="icon" href="../../images/logo/sezan2.ico">
     <title>CONTACT | 聖傘</title>
 </head>

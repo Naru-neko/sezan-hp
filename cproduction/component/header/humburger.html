@@ -7,7 +7,10 @@
     </label>
     <nav class="nav_content">
         <img src="/images/logo/sezan-plane-white.png" alt="">
-        <div class="copyright">@ 2024 聖傘.llc ALL RIGHTS RESERVED</div>
+        <div class="copyright">
+            <a href="/cproduction/ppolicy/ppolicy.html" id="privacy">Privacy Policy</a>
+            <p>@ 2024 聖傘.llc ALL RIGHTS RESERVED</p>
+        </div>
         <div id="insta"><a href="https://www.instagram.com/sezan_official/?ref=digital-life-asia&hl=af"><img src="/images/sns/insta/Instagram_Glyph_White.png" alt=""></a></div>
         <ul class="nav_list">
             <li class="nav_item"><a href="/cproduction/cproduction.html">HOME</a></li>
@@ -98,6 +101,21 @@
             position: absolute;
             bottom: 1%;
             left: 2%;
+        }
+
+        #privacy {
+            text-decoration: none;
+            font-size: 3.5vmin;
+            color: rgb(209, 209, 209);
+            margin-bottom: 5vmin;
+        }
+
+        #privacy:hover {
+            color: white;
+        }
+
+        .copyright p {
+            margin: 0;
             font-size: 2vmin;
             color: white;
         }
@@ -128,6 +146,10 @@
             font-size: 3vw;
             text-decoration: none;
             color: aliceblue;
+        }
+
+        .nav_item a:hover {
+            color: #d1d1d1;
         }
 
         #drawer-input:checked ~ .humburger {

@@ -73,6 +73,10 @@ h2, h3, h4 {
     transition: 0.5s;
 }
 
+h3 {
+    display: none;
+}
+
 .work:hover > h2 {
     color: rgb(128, 194, 255);
 }
@@ -118,14 +122,14 @@ h4 {
         margin-bottom: 4vh;
     }
     h2 {
-        font-size: 2.6vmin;
+        font-size: 4.5vw;
     }
 
     h3 {
-        font-size: 1.9vmin;
+        font-size: 2.9vw;
     }
 
     h4 {
-        font-size: 1.8vmin;
+        font-size: 3vw;
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-store">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="/cproduction/cproglobal.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="icon" href="/images/logo/sezan2.ico">
     <title>ABOUT | 聖傘-CreativeProduction</title>
@@ -82,7 +83,7 @@
 
 
         <section>
-            <swiper-container init="false" class="mySwiper contents">
+            <swiper-container init="false" class="mySwiper2 contents">
                 <swiper-slide>
                     <div class="content">
                         <p>VIDEO<br>PRODUCTION</p>
@@ -211,23 +212,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script>
-        var swiperEl = document.querySelector(".mySwiper");
-        Object.assign(swiperEl, {
-        grabCursor: true,
-        loop: true,
-        autoplay:true,
-        effect: "creative",
-        creativeEffect: {
-            prev: {
-            shadow: true,
-            translate: [0, 0, -400],
-            },
-            next: {
-            translate: ["100%", 0, 0],
-            },
+        var swiper2El = document.querySelector(".mySwiper2");
+    Object.assign(swiper2El, {
+      grabCursor: true,
+      autoplay: true,
+      loop: true,
+      speed: 1000,
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: false,
+          translate: ["-120%", 0, -500],
         },
-        });
-        swiperEl.initialize()
+        next: {
+          shadow: false,
+          translate: ["120%", 0, -500],
+        },
+      },
+    });
+    swiper2El.initialize()
     </script>
 
 </body>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-store">
     <link rel="stylesheet" href="css/confirms.css">
+    <link rel="stylesheet" href="/cproduction/cproglobal.css">
     <link rel="icon" href="../../images/logo/sezan2.ico">
     <title>確認 | 聖傘</title>
 </head>
