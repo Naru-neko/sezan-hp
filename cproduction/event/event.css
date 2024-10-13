@@ -73,19 +73,10 @@ h2, h3, h4 {
     transition: 0.5s;
 }
 
-.event:hover > h2 {
-    color: rgb(128, 194, 255);
-}
-
 .event img {
     width: 100%;
     height: auto;
     transition: 0.5s;
-}
-
-.event img:hover {
-    cursor: url(/images/viewcontent.png), default;
-    box-shadow: #000000 0px 0px 20px;
 }
 
 h2 {

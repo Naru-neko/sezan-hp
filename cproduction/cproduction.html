@@ -138,7 +138,7 @@
                 </div>
 
                 <swiper-container class="mySwiper1" autoplay="true" loop="true" pagination="false" effect="cube" grab-cursor="true" cube-effect-shadow="true"
-                cube-effect-slide-shadows="true" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
+                cube-effect-slide-shadows="false" cube-effect-shadow-offset="20" cube-effect-shadow-scale="0.94">
                     <swiper-slide>
                         <a href="/cproduction/works/works.html"><img src="/images/works/girlgirl.png" alt=""></a>
                     </swiper-slide>
@@ -172,65 +172,69 @@
                     <p>EVENT</p>
                 </div>
 
-                <swiper-container class="mySwiper" autoplay="true" loop="true" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
-                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="-40" coverflow-effect-depth="100"
-                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-container class="mySwiper" slides-per-view="auto" centered-slides="true" space-between="30" autoplay="true" loop="true">
 
                     <swiper-slide>
                         <a class="event" href="/cproduction/event/event.html" target="_blank">
-                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <img class="sambnail" src="../images/event/blondey.jpg" alt="">
                             <div class="event-info">
-                                <p>EVENT HOGE</p>
-                                <p>START: 2023</p>
+                                <p>BLONDEY</p>
+                                <p>2024</p>
                             </div>
                         </a>
                     </swiper-slide>
 
                     <swiper-slide>
                         <a class="event" href="/cproduction/event/event.html" target="_blank">
-                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <img class="sambnail" src="../images/event/murasaki.jpg" alt="">
                             <div class="event-info">
-                                <p>EVEMT HOGE</p>
-                                <p>START: 2023</p>
+                                <p>MURASAKI DANCE CAMP</p>
+                                <p>2024</p>
                             </div>
                         </a>
                     </swiper-slide>
 
                     <swiper-slide>
                         <a class="event" href="/cproduction/event/event.html" target="_blank">
-                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <img class="sambnail" src="../images/event/belish.jpg" alt="">
                             <div class="event-info">
-                                <p>EVENT HOGE</p>
-                                <p>START: 2023</p>
+                                <p>Project Belish</p>
+                                <p>2024</p>
                             </div>
                         </a>
                     </swiper-slide>
 
                     <swiper-slide>
                         <a class="event" href="/cproduction/event/event.html" target="_blank">
-                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <img class="sambnail" src="../images/event/comix.jpg" alt="">
                             <div class="event-info">
-                                <p>EVENT HOGE</p>
-                                <p>START: 2023</p>
+                                <p>COMIX</p>
+                                <p>2024</p>
                             </div>
                         </a>
                     </swiper-slide>
 
                     <swiper-slide>
                         <a class="event" href="/cproduction/event/event.html" target="_blank">
-                            <img class="sambnail" src="../images/sample169.png" alt="">
+                            <img class="sambnail" src="../images/event/nikufes.jpg" alt="">
                             <div class="event-info">
-                                <p>EVENT HOGE</p>
-                                <p>START: 2023</p>
+                                <p>肉フェス2024</p>
+                                <p>2024</p>
+                            </div>
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a class="event" href="/cproduction/event/event.html" target="_blank">
+                            <img class="sambnail" src="../images/event/lonely.png" alt="">
+                            <div class="event-info">
+                                <p>LONELY論理×GALFY POPUP</p>
+                                <p>2024</p>
                             </div>
                         </a>
                     </swiper-slide>
 
                 </swiper-container>
-
-                <div class="more">
-                    <a href="/cproduction/event/event.html">View More</a>
-                </div>
 
             </div>
 
@@ -292,6 +296,7 @@
         Object.assign(swiper4El, {
             grabCursor: true,
             autoplay: true,
+            speed: 1000,
             effect: "creative",
             creativeEffect: {
                 prev: {

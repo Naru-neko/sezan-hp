@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     <link rel="icon" href="images/logo/sezan2.ico">
 
 </head>
-
 <body>
 
     <div class="opening">
@@ -21,50 +19,85 @@
         </div>
     </div>
 
-    <swiper-container style="--swiper-navigation-color: #979797; --swiper-pagination-color: #fff" class="mySwiper"
-    thumbs-swiper=".mySwiper2" loop="true" space-between="10" navigation="true" autoplay="false">
-        <swiper-slide class="main-production">
-            <div class="main-wrp">
-                <img src="/images/logo/sezan-plane.png" alt="" class="logo">
-                <div class="info">
-                    <div class="vpro"><p>Video Production</p><img src="/images/works/coolish.png" alt=""></div>
-                    <div class="epro"><p>Event Production</p><img src="/images/event/blondey.jpg" alt=""></div>
-                    <div class="mpro"><p>Music Production</p><img src="/images/tmp/014709.png" alt=""></div>
-                    <div class="dcho"><p>Dance Choreography</p><img src="/images/tmp/014924.png" alt=""></div>
-                </div>
-                <div class="main-right">
-                    <p class="main-title">Creative<br>PRODUCTION</p>
-                    <div class="preview"><video poster="" webkit-playsinline playsinline muted autoplay loop><source src="/videos/cpro-preview.mp4"></video></div>
-                </div>
-            </div>
-        </swiper-slide>
-        <swiper-slide class="main-agent">
-            <div class="main-wrp">
-                <img src="/images/logo/sezan-plane-white.png" alt="" class="logo">
-                <div class="info">
-                    <div class="mng"><p>Management</p><img src="/images/cast/nozomi.png" alt=""></div>
-                    <div class="icas"><p>Casting</p><img src="/images/tmp/034338.png" alt=""></div>
-                </div>
-                <div class="main-right">
-                    <p class="main-title">TALENT<br>PRODUCTION</p>
-                    <div class="preview"><video poster="" webkit-playsinline playsinline muted autoplay loop><source src="/videos/tpro-preview.mp4"></video></div>
-                </div>
-            </div>
-        </swiper-slide>
-    </swiper-container>
+    <main>
 
-    <swiper-container class="mySwiper2" loop="true" space-between="5" slides-per-view="2" free-mode="true"
-    watch-slides-progress="true">
-        <swiper-slide class="sub-production">
-            <a href="/cproduction/cproduction.html" class="viewmore vm"><p>Visit Site</p><img src="/images/allow-b.png" alt=""></a>
-        </swiper-slide>
-        <swiper-slide class="sub-agent">
-            <a href="/tproduction/tproduction.html" class="viewmore2 vm"><p>Visit Site</p><img src="/images/allow.png" alt=""></a>
-        </swiper-slide>
-    </swiper-container>
+        <div class="nav cpro">
+            <input type="checkbox" class="drawer-hidden" id ="drawer-input">
+            <h2>Creative<br>PRODUCTION</h2>
+            <label class="humburger cpro-hmgr" for="drawer-input">
+                <div class="humburger-line"></div>
+                <div class="humburger-line"></div>
+                <div class="touch"><img src="/images/left.png" alt=""><p>View More</p></div>
+            </label>
+            <nav class="nav_content">
+                <div class="preview"><video poster="" webkit-playsinline playsinline muted autoplay loop><source src="/videos/cpro-preview.mp4"></video></div>
+                <div class="contents-title"><p>CREATIVE PRODUCTION</p></div>
+                <div class="contents-wrp">
+                    <div class="visit">
+                        <a href="/cproduction/cproduction.html">Visit Site</a>
+                    </div>
+                    <div class="products">
+                        <div class="product vpro"><p>VIDEO PRODUCTION</p><img src="/images/works/coolish.png" alt=""></div>
+                        <div class="product epro"><p>EVENT PRODUCTION</p><img src="/images/event/blondey.jpg" alt=""></div>
+                        <div class="product mpro"><p>MUSIC PRODUCTION</p><img src="/images/tmp/014709.png" alt=""></div>
+                        <div class="product dcho"><p>DANCE CHOREOGRAPHY</p><img src="/images/tmp/014924.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <div class="nav tpro">
+            <input type="checkbox" class="drawer-hidden" id ="drawer-input2">
+            <h2>TALENT<br>PRODUCTION</h2>
+            <label class="humburger tpro-hmgr" for="drawer-input2">
+                <div class="humburger-line"></div>
+                <div class="humburger-line"></div>
+                <div class="touch"><p>View More</p><img src="/images/left.png" alt=""></div>
+            </label>
+            <nav class="nav_content">
+                <div class="preview"><video poster="" webkit-playsinline playsinline muted autoplay loop><source src="/videos/tpro-previe.mp4"></video></div>
+                <div class="contents-title"><p>TALENT PRODUCTION</p></div>
+                <div class="contents-wrp">
+                    <div class="visit">
+                        <a href="/tproduction/tproduction.html">Visit Site</a>
+                    </div>
+                    <div class="products">
+                        <div class="product mng"><p>MANAGEMENT</p><img src="/images/cast/nozomi.png" alt=""></div>
+                        <div class="product cas"><p>CASTING</p><img src="/images/tmp/034338.png" alt=""></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <img src="/images/logo/sezan-plane-white.png" alt="" class="logo">
+
+        <div class="up-left"></div>
+        <div class="down-right"></div>
+
+    </main>
+
+
+    <script>
+        document.querySelector("#drawer-input").addEventListener("click", function() {
+            if (document.querySelector("#drawer-input").checked) {
+                document.querySelector(".tpro").style.display = "none";
+                document.querySelector(".touch").style.display = "none";
+            } else {
+                document.querySelector(".tpro").style.display = "block";
+                document.querySelector(".touch").style.display = "flex";
+            }
+        });
+
+        document.querySelector("#drawer-input2").addEventListener("click", function() {
+            if (document.querySelector("#drawer-input2").checked) {
+                document.querySelector(".cpro").style.display = "none";
+                document.querySelector(".tpro .touch").style.display = "none";
+            } else {
+                document.querySelector(".cpro").style.display = "block";
+                document.querySelector(".tpro .touch").style.display = "flex";
+            }
+        });
+    </script>
 
 </body>
-
 </html>
