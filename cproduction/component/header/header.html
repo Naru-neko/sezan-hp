@@ -1,21 +1,27 @@
 <header>
     <a href="/cproduction/cproduction.html"><img src="/images/logo/sezan-plane-white.png" alt=""></a>
-    <article class="news">
-        <p>NEWS</p>
-        <div class="news-line">
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
-            <div>No News Available&nbsp;</div>
+    <div class="news">
+        <p class="news-title">NEWS</p>
+        <div class="scroll-infinity__wrap ">
+            <ul class="scroll-infinity__list scroll-infinity__list--left">
+                <li class="scroll-infinity__item">
+                    <p>【出演者募集】12/7(sat.)Playground vol.8 @渋谷WOMB 1F 15:00〜21:00(予定)</p>
+                </li>
+                <li class="scroll-infinity__item">
+                    <p>【出演者募集】12/7(sat.)Playground vol.8 @渋谷WOMB 1F 15:00〜21:00(予定)</p>
+                </li>
+            </ul>
+            <ul class="scroll-infinity__list scroll-infinity__list--left">
+                <li class="scroll-infinity__item">
+                    <p>【出演者募集】12/7(sat.)Playground vol.8 @渋谷WOMB 1F 15:00〜21:00(予定)</p>
+                </li>
+                <li class="scroll-infinity__item">
+                    <p>【出演者募集】12/7(sat.)Playground vol.8 @渋谷WOMB 1F 15:00〜21:00(予定)</p>
+                </li>
+            </ul>
         </div>
-    </article>
-
+    </div>
+    <div class="dummy"></div>
     <style>
         header {
             top: 0;
@@ -38,82 +44,69 @@
             z-index: 100;
         }
 
-        .news {
-            width: calc(100vw - 80vmin);
-            color: #e0e0e0;
-            padding: 0;
-            margin: 0;
-            margin-left: 5vmin;
-            margin-top: 1vmin;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            font-weight: bold;
-            z-index: 100;
-            overflow: hidden;
-        }
-
-        .news p {
-            margin: 0;
-            font-size: 1.8vmin;
-            color: #a1a1a1;
-        }
-
-        .news-line {
-            border-top: #ffffff 1px solid;
-            border-bottom: #ffffff 1px solid;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            width: 100%;
-            z-index: 2;
-        }
-
-        .news-line div {
-            flex: 0 0 auto;
-            margin: 0;
-            padding: 0;
-            margin-top: 0.5vmin;
-            margin-bottom: 0.5vmin;
-            white-space: nowrap;
-            overflow: hidden;
-            width: auto;
-            z-index: 3;
-        }
-
-        .news-line div:nth-child(odd) {
-            animation: scroll1 4s -2s linear infinite;
-        }
-
-        .news-line div:nth-child(even) {
-            animation: scroll2 4s linear infinite;
-        }
-
-        @keyframes scroll1 {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        @keyframes scroll2 {
-            0% {
-                transform: translateX(0%);
-            }
-            100% {
-                transform: translateX(-200%);
-            }
-        }
-
         header a:hover {
             color: #00a0df;
         }
 
+        @keyframes infinity-scroll-left {
+            from {
+              transform: translateX(0);
+            }
+              to {
+              transform: translateX(-100%);
+            }
+        }
+
+        .news {
+            width: 50%;
+            height: 4vh;
+        }
+
+        .news-title {
+            font-size: 2.3vmin;
+            color: #d1d1d1;
+            margin: 0;
+            margin-bottom: 0.5vmin;
+            padding: 0;
+        }
+
+        .scroll-infinity__wrap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            border-top:#bdbdbd 1px solid;
+            border-bottom:#bdbdbd 1px solid;
+            background-color: rgba(255,255,255, 0.1);
+        }
+        .scroll-infinity__list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .scroll-infinity__list--left {
+            animation: infinity-scroll-left 10s infinite linear both;
+        }
+        .scroll-infinity__wrap:hover > .scroll-infinity__list--left {
+            animation-play-state: paused;
+        }
+        .scroll-infinity__item {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scroll-infinity__item p {
+            white-space: nowrap;
+            color: #d1d1d1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dummy {
+            width: 18vmin;
+        }
 
 
         @media screen and (max-width:1250px) {
@@ -123,7 +116,13 @@
             .news {
                 display: none;
             }
+            .dummy {
+                display: none;
+            }
         }
 
     </style>
+
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </header>

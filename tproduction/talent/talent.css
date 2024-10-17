@@ -187,6 +187,7 @@ main {
     }
     .name {
         font-size: 3.7vw;
+        margin-top: 3.5vmin;
     }
     .job {
         font-size: 2.6vw;

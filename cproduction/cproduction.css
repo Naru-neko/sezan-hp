@@ -67,7 +67,7 @@ body{
     padding: 0;
     margin: 0;
     position: absolute;
-    bottom: 0;
+    bottom: 1vh;
     left: 0;
     width: 80%;
     z-index: 2;
@@ -144,7 +144,13 @@ main {
     margin: 0;
     padding: 0;
     width: 100%;
+    background-image: url(/images/bg-texture.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #fff;
+    border-top: #424242 5px solid;
 }
 
 .main-header-wrp {
@@ -333,6 +339,7 @@ section {
     justify-content: center;
     align-items: center;
     padding-bottom: 15vh;
+    padding-top: 15vh;
     overflow: hidden;
 }
 
@@ -342,9 +349,13 @@ section {
     transform: rotate3d(1, 1, 1, 10deg);
 }
 
+.mySwiper4 {
+    height: 80%;
+}
+
 .production-content {
     width: 80%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,7 +454,6 @@ section {
 
 .new-events {
     height: 100vh;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -556,7 +566,7 @@ section {
 
 @media screen and (max-width:1250px) {
     #cname {
-        bottom: 20%;
+        bottom: 15%;
     }
     .main-header-wrp {
         display: none;
