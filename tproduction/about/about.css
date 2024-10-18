@@ -2,7 +2,6 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    animation: fadeIn forwards 0.3s linear;
 }
 
 body{
@@ -375,6 +374,21 @@ iframe {
 }
 
 @media screen and (max-width:1250px) {
+    .mission {
+        width: 70vw;
+    }
+    .mission-contents {
+        width: 100%;
+    }
+    .mission-contents p:nth-child(1) {
+        font-size: 8vw;
+    }
+    .mission-contents p:nth-child(2) {
+        font-size: 6vw;
+    }
+    .mission-contents p:nth-child(3) {
+        font-size: 3vw;
+    }
     .detail {
         flex-direction: column;
     }

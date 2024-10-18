@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-store">
-    <title>聖傘</title>
+    <meta http-equiv="Content-Language" content="ja">
+    <meta name="google" content="notranslate">
+    <title>聖傘-SEZAN</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="icon" href="images/logo/sezan2.ico">
@@ -23,88 +25,222 @@
 
         <div class="nav cpro">
             <input type="checkbox" class="drawer-hidden" id ="drawer-input">
-            <h2>Creative<br>PRODUCTION</h2>
             <label class="humburger cpro-hmgr" for="drawer-input">
-                <div class="humburger-line"></div>
-                <div class="humburger-line"></div>
+                <div class="humburger-line" id="cpro-hmln-1"></div>
+                <div class="humburger-line" id="cpro-hmln-2"></div>
                 <div class="touch"><img src="/images/left.png" alt=""><p>View More</p></div>
             </label>
-            <nav class="nav_content">
-                <div class="preview">
-                    <video poster="" webkit-playsinline playsinline muted autoplay loop>
-                        <source src="/videos/cpro-preview.mp4">
-                        <source src="/videos/cpro-preview.webm">
-                    </video>
-                </div>
-                <div class="contents-title"><p>CREATIVE PRODUCTION</p></div>
-                <div class="contents-wrp">
-                    <div class="visit">
-                        <a href="/cproduction/cproduction.html">Visit Site</a>
-                    </div>
-                    <div class="products">
-                        <div class="product vpro"><p>VIDEO PRODUCTION</p><img src="/images/works/coolish.jpg" alt=""></div>
-                        <div class="product epro"><p>EVENT PRODUCTION</p><img src="/images/event/blondey.jpg" alt=""></div>
-                        <div class="product mpro"><p>MUSIC PRODUCTION</p><img src="/images/tmp/014709.jpg" alt=""></div>
-                        <div class="product dcho"><p>DANCE CHOREOGRAPHY</p><img src="/images/tmp/014924.jpg" alt=""></div>
-                    </div>
-                </div>
-            </nav>
         </div>
 
         <div class="nav tpro">
             <input type="checkbox" class="drawer-hidden" id ="drawer-input2">
-            <h2>TALENT<br>PRODUCTION</h2>
             <label class="humburger tpro-hmgr" for="drawer-input2">
-                <div class="humburger-line"></div>
-                <div class="humburger-line"></div>
+                <div class="humburger-line" id="tpro-hmln-1"></div>
+                <div class="humburger-line" id="tpro-hmln-2"></div>
                 <div class="touch"><p>View More</p><img src="/images/left.png" alt=""></div>
             </label>
-            <nav class="nav_content">
-                <div class="preview">
-                    <video poster="" webkit-playsinline playsinline muted autoplay loop>
-                        <source src="/videos/tpro-previe.mp4">
-                        <source src="/videos/tpro-previe.webm">
-                    </video>
-                </div>
-                <div class="contents-title"><p>TALENT PRODUCTION</p></div>
-                <div class="contents-wrp">
-                    <div class="visit">
-                        <a href="/tproduction/tproduction.html">Visit Site</a>
-                    </div>
-                    <div class="products">
-                        <div class="product mng"><p>MANAGEMENT</p><img src="/images/cast/nozomi.jpg" alt=""></div>
-                        <div class="product cas"><p>CASTING</p><img src="/images/tmp/034338.jpg" alt=""></div>
-                    </div>
-                </div>
-            </nav>
         </div>
 
         <img src="/images/logo/sezan1-white.png" alt="" class="logo">
 
-        <div class="up-left"></div>
-        <div class="down-right"></div>
+        <nav class="nav_content tpro-content">
+            <div class="preview">
+                <video poster="" webkit-playsinline playsinline muted autoplay loop>
+                    <source src="/videos/Tpro-Previe.mp4">
+                    <source src="/videos/Tpro-Previe.webm">
+                </video>
+            </div>
+            <div class="contents-title"><p>TALENT PRODUCTION</p></div>
+            <div class="contents-wrp">
+                <div class="visit">
+                    <a href="/tproduction/tproduction.html">Visit Site</a>
+                </div>
+                <div class="products">
+                    <div class="product mng"><p>MANAGEMENT</p><img src="/images/cast/nozomi.jpg" alt=""></div>
+                    <div class="product cas"><p>CASTING</p><img src="/images/tmp/034338.jpg" alt=""></div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav_content cpro-content">
+            <div class="preview">
+                <video poster="" webkit-playsinline playsinline muted autoplay loop>
+                    <source src="/videos/Cpro-Preview.mp4">
+                    <source src="/videos/Cpro-Preview.webm">
+                </video>
+            </div>
+            <div class="contents-title"><p>CREATIVE PRODUCTION</p></div>
+            <div class="contents-wrp">
+                <div class="visit">
+                    <a href="/cproduction/cproduction.html">Visit Site</a>
+                </div>
+                <div class="products">
+                    <div class="product vpro"><p>VIDEO PRODUCTION</p><img src="/images/works/coolish.jpg" alt=""></div>
+                    <div class="product epro"><p>EVENT PRODUCTION</p><img src="/images/event/blondey.jpg" alt=""></div>
+                    <div class="product mpro"><p>MUSIC PRODUCTION</p><img src="/images/tmp/014709.jpg" alt=""></div>
+                    <div class="product dcho"><p>DANCE CHOREOGRAPHY</p><img src="/images/tmp/014924.jpg" alt=""></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="up-left"><h2>Creative<br>PRODUCTION</h2></div>
+        <div class="down-right"><h2>TALENT<br>PRODUCTION</h2></div>
 
     </main>
 
 
     <script>
+        function opener() {
+            document.querySelector(".up-left").animate(
+                [ { transform: ' translateY(0%)' }, { transform: ' translateY(-100%)' } ],
+                { duration: 700, fill: 'forwards' ,delay: 1000}
+            );
+            document.querySelector(".down-right").animate(
+                [ { transform: ' translateY(0%)' }, { transform: ' translateY(100%)' } ],
+                { duration: 700, fill: 'forwards' ,delay: 1000}
+            );
+            setTimeout(() => {
+                document.querySelector(".up-left").style.display = 'none';
+                document.querySelector(".down-right").style.display = 'none';
+            }, 1700);
+        }
+
+        function closer() {
+            document.querySelector(".up-left").style.display = 'block';
+            document.querySelector(".down-right").style.display = 'block';
+            document.querySelector(".up-left").animate(
+                [ { transform: ' translateY(-100%)' }, { transform: ' translateY(0%)' } ],
+                { duration: 700, fill: 'forwards'}
+            );
+            document.querySelector(".down-right").animate(
+                [ { transform: ' translateY(100%)' }, { transform: ' translateY(0%)' } ],
+                { duration: 700, fill: 'forwards'}
+            );
+        }
+
+        function lineOpen(which) {
+            document.querySelector(which + " .humburger-line:nth-child(1)").animate(
+                [ { rotate: '0deg' }, { rotate: '-1125deg' } ],
+                { duration: 700, fill: 'forwards' ,delay: 1000}
+            );
+            document.querySelector(which + " .humburger-line:nth-child(2)").animate(
+                [ { rotate: '0deg' }, { rotate: '-1125deg' } ],
+                { duration: 700, fill: 'forwards', delay: 1000}
+            );
+        }
+
+        function lineClose(which) {
+            document.querySelector(which + " .humburger-line:nth-child(1)").animate(
+                [ { rotate: '-1125deg' }, { rotate: '0deg' } ],
+                { duration: 700, fill: 'forwards' }
+            );
+            document.querySelector(which + " .humburger-line:nth-child(2)").animate(
+                [ { rotate: '-1125deg' }, { rotate: '0deg' } ],
+                { duration: 700, fill: 'forwards' }
+            );
+        }
+
         document.querySelector("#drawer-input").addEventListener("click", function() {
+            const mediaQuery = window.matchMedia('(max-width: 1250px)')
             if (document.querySelector("#drawer-input").checked) {
-                document.querySelector(".tpro").style.display = "none";
-                document.querySelector(".touch").style.display = "none";
+                document.querySelector(".tpro-content").style.display = "none";
+
+                document.querySelector(".tpro").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 200, fill: 'forwards'}
+                );
+                document.querySelector(".touch").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 200, fill: 'forwards'}
+                );
+                document.querySelector(".logo").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 700, fill: 'forwards', delay: 300}
+                );
+                opener();
+                lineOpen('.cpro');
+                setTimeout(() => {
+                    document.querySelector(".tpro").style.display = "none";
+                    document.querySelector(".touch").style.display = "none";
+                    document.querySelector(".logo").style.display = "none";
+                }, 1000);
             } else {
                 document.querySelector(".tpro").style.display = "block";
                 document.querySelector(".touch").style.display = "flex";
+                document.querySelector(".logo").style.display = "block";
+                document.querySelector(".tpro").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 200, fill: 'forwards' ,delay: 700}
+                );
+                document.querySelector(".touch").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 200, fill: 'forwards' ,delay: 700}
+                );
+                document.querySelector(".logo").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 300, fill: 'forwards', delay: 900}
+                );
+                setTimeout(() => {
+                    if (mediaQuery.matches) {
+                        document.querySelector(".tpro-content").style.display = "flex";
+                    } else {
+                        document.querySelector(".tpro-content").style.display = "block";
+                    }
+                }, 1000);
+                lineClose('.cpro');
+                closer();
             }
         });
 
         document.querySelector("#drawer-input2").addEventListener("click", function() {
+            const mediaQuery = window.matchMedia('(max-width: 1250px)')
             if (document.querySelector("#drawer-input2").checked) {
-                document.querySelector(".cpro").style.display = "none";
-                document.querySelector(".tpro .touch").style.display = "none";
+                document.querySelector(".cpro-content").style.display = "none";
+
+                document.querySelector(".cpro").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 200, fill: 'forwards'}
+                );
+                document.querySelector(".tpro .touch").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 200, fill: 'forwards'}
+                );
+                document.querySelector(".logo").animate(
+                    [{ opacity: 1 }, { opacity: 0 }],
+                    { duration: 700, fill: 'forwards', delay: 300}
+                );
+                opener();
+                lineOpen('.tpro');
+                setTimeout(() => {
+                    document.querySelector(".cpro").style.display = "none";
+                    document.querySelector(".tpro .touch").style.display = "none";
+                    document.querySelector(".logo").style.display = "none";
+                }, 1000);
             } else {
                 document.querySelector(".cpro").style.display = "block";
                 document.querySelector(".tpro .touch").style.display = "flex";
+                document.querySelector(".logo").style.display = "block";
+                document.querySelector(".cpro").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 200, fill: 'forwards' ,delay: 700}
+                );
+                document.querySelector(".tpro .touch").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 200, fill: 'forwards' ,delay: 700}
+                );
+                document.querySelector(".logo").animate(
+                    [{ opacity: 0 }, { opacity: 1 }],
+                    { duration: 300, fill: 'forwards', delay: 900}
+                );
+                setTimeout(() => {
+                    if (mediaQuery.matches) {
+                        document.querySelector(".cpro-content").style.display = "flex";
+                    } else {
+                        document.querySelector(".cpro-content").style.display = "block";
+                    }
+                }, 1000);
+                lineClose('.tpro');
+                closer();
             }
         });
     </script>

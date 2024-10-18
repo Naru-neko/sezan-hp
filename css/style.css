@@ -3,12 +3,20 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    background-color: #a0a0a0;
     font-family: "segoe ui",meiryo,"yu gothic","hiragino kaku gothic pron",sans-serif;
+}
+
+.tpro, .tpro-content{
+    font-family: serif;
 }
 
 main {
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -82,6 +90,7 @@ main {
 }
 
 .up-left, .down-right {
+    margin: 0;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -91,26 +100,13 @@ main {
 .up-left {
     background-color: #ffffff;
     clip-path: polygon(0 0, 100% 0%, 0 100%);
+    transform: translateY(0%);
 }
 
 .down-right {
     background-color: #0e0e0e;
     clip-path: polygon(0 100%, 100% 0%, 100% 100%);
-}
-
-
-
-
-
-.nav {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    z-index: 10;
-}
-
-.tpro {
-    right: 0;
+    transform: translateY(0%);
 }
 
 h2 {
@@ -119,15 +115,28 @@ h2 {
     font-size: 2.8vw;
 }
 
-.cpro h2 {
+.up-left h2 {
     top: 25%;
-    left: 20%;
+    left: 10%;
 }
 
-.tpro h2 {
+.down-right h2 {
     bottom: 25%;
-    right: 20%;
+    right: 10%;
     color: #ffffff;
+}
+
+
+
+.nav {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 15;
+}
+
+.tpro {
+    right: 0;
 }
 
 .humburger {
@@ -171,6 +180,7 @@ h2 {
     left: 140%;
     opacity: 0;
     width: auto;
+    pointer-events: none;
     animation: flash 5s 1s linear infinite;
 }
 
@@ -218,7 +228,7 @@ h2 {
     height: 5px;
     background-color: #313131;
     margin-bottom: 10%;
-    transition: 0.5s;
+    transition: 1s;
     width: 70%;
     position: absolute;
 }
@@ -240,63 +250,24 @@ h2 {
     display: none;
 }
 
+
 .nav_content {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     inset: 0;
-    rotate: y -90deg;
     margin: auto;
     opacity: 1;
-    z-index: 10;
-    transition: 0.5s;
+    z-index: 2;
+    transition: 1s;
 }
 
-.cpro .nav_content {
-    transform-origin: left;
+.cpro_content {
     background-color: #ffffff;
 }
 
-.tpro .nav_content {
-    transform-origin: right;
-    left: -100%;
+.tpro_content {
     background-color: #0e0e0e;
-}
-
-#drawer-input:checked ~ .humburger {
-    background: none;
-}
-
-#drawer-input:checked ~ .nav_content {
-    rotate: y 0deg;
-    opacity: 1;
-}
-
-#drawer-input:checked ~ .humburger div:nth-child(1),
-#drawer-input:checked ~ .humburger div:nth-child(2) {
-    rotate: -405deg;
-    background-color: #000000;
-    top: 50%;
-}
-
-#drawer-input:checked > .tpro {
-    display: none;
-}
-
-#drawer-input2:checked ~ .humburger {
-    background: none;
-}
-
-#drawer-input2:checked ~ .nav_content {
-    rotate: y 0deg;
-    opacity: 1;
-}
-
-#drawer-input2:checked ~ .humburger div:nth-child(1),
-#drawer-input2:checked ~ .humburger div:nth-child(2) {
-    rotate: -405deg;
-    background-color: #ffffff;
-    top: 50%;
 }
 
 .preview {
@@ -308,7 +279,6 @@ h2 {
     overflow: hidden;
     margin: 0;
     padding: 0;
-
 }
 
 video {
@@ -352,41 +322,44 @@ video {
 }
 
 .visit {
-    width: 40%;
-    height: 90%;
+    width: 45%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    mix-blend-mode: difference;
 }
 
-.visit a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 5.5vw;
+.visit a{
     white-space: nowrap;
-    font-weight: bold;
-    border: 6px solid #000000;
-    padding: 3vmin;
-    padding-right: 4vmin;
-    padding-left: 4vmin;
-    border-radius: 6rem;
-    transition: 0.5s;
-}
-
-.tpro .visit a {
+    text-align: center;
+    padding: 2vmin 8vmin;
+    border: 4px solid #ffffff;
+    border-radius: 5px;
     color: #ffffff;
-    border: 6px solid #ffffff;
+    font-size: 4.5vw;
+    transition: 0.5s;
+    text-decoration: none;
+    animation: anima-button-30 2s infinite;
 }
 
 .visit a:hover {
-    color: #ffffff;
-    background-color: #919191;
+    color: #fff;
+    background-color: #4f4f4f;
 }
 
-.tpro .visit a:hover {
-    background-color: #cecece;
-    color: #000000;
+@keyframes anima-button-30 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(79 79 79 / 50%);
+    }
+    50% {
+        box-shadow: 0 0 0 1.2em rgb(0 0 0 / 0%);
+    }
+    0% {
+        box-shadow: 0 0 0 0 rgb(79 79 79 / 50%);
+    }
 }
+
 
 .products {
     width: 45%;

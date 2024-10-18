@@ -2,7 +2,6 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    animation: fadeIn forwards 0.3s linear;
 }
 
 body{
@@ -276,7 +275,7 @@ swiper-slide:nth-child(4) {
     position: relative;
     width: 38%;
     height: auto;
-    padding: 4vmin;
+    padding: 6vmin;
     padding-top: 8vmin;
     padding-bottom: 8vmin;
     margin-right: 5vw;
@@ -305,20 +304,20 @@ swiper-slide:nth-child(4) {
 }
 
 .content p:nth-child(1) {
-    font-size: 3.4vw;
-    text-align: center;
-    font-weight: lighter;
+    font-size: 3.8vw;
+    text-align: left;
+    font-weight: bold;
     margin: 0;
 }
 
 .content p:nth-child(2) {
-    font-size: 1.6vw;
+    font-size: 1.3vw;
     font-weight: lighter;
     margin: 0;
     width: 95%;
     margin-top: 5vmin;
     margin-bottom: 5vmin;
-    text-align: center;
+    text-align: left;
 }
 
 .clients {
@@ -483,7 +482,7 @@ iframe {
         flex-direction: column;
     }
     .content p:nth-child(1) {
-        font-size: 6vw;
+        font-size: 7vw;
     }
     .content p:nth-child(2) {
         font-size: 3vw;

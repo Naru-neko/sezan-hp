@@ -1,0 +1,23 @@
+.paging {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    transform-origin: left;
+    transform: rotateY(90deg);
+    background-color: #fff;
+    z-index: 9999;
+    opacity: 1;
+}
+
+.paging-in {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    transform-origin: right;
+    transform: rotateY(0deg);
+    background-color: #fff;
+    z-index: 9999;
+    opacity: 1;
+}

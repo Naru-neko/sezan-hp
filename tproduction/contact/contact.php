@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="/tproduction/tproglobal.css">
+    <link rel="stylesheet" href="/tproduction/component/paging/paging.css">
+    <script src="/tproduction/component/paging/paging.js"></script>
     <link rel="icon" href="../../images/logo/sezan2.ico">
     <title>CONTACT | 聖傘</title>
 </head>
 
 <body>
+    <div class="paging"></div>
+    <div class="paging-in"></div>
     <div id="header"></div>
     <div class="h1-title">
         <h1>CONTACT</h1>

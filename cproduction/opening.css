@@ -1,0 +1,126 @@
+html {
+    overflow: hidden;
+    animation: scrollLock 0.5s 6s forwards linear;
+}
+@keyframes scrollLock {
+    from {
+        overflow: hidden;
+    }
+    to {
+        overflow: visible;
+    }
+}
+
+@keyframes infinity-scroller-left {
+    from {
+        transform: translateX(0);
+    }
+        to {
+        transform: translateX(-100%);
+    }
+}
+.scroller {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1001;
+    animation: fadeOuter 2s 6s forwards linear;
+}
+.bg {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+}
+.fg {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1002;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    animation: fadeOut 2s 0.5s forwards linear;
+}
+
+@keyframes fadeOuter {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.scroller__wrap {
+    display: flex;
+    overflow: hidden;
+    height: 50vh;
+    position: relative;
+    z-index: 1001;
+}
+.filter {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+.text {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    opacity: 0;
+}
+.upper .text {
+    font-size: 11vw;
+    animation: fadeIn 1s 2s forwards linear;
+}
+.lower .text {
+    font-size: 7vw;
+    transform: scaleY(1.5);
+    animation: fadeIn 1s 3s forwards linear;
+}
+.scroller__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.scroller__list--left {
+    animation: infinity-scroller-left 10s infinite linear both;
+}
+.lower .scroller__list--left {
+    animation: infinity-scroller-left 10s infinite linear both reverse;
+}
+.upper {
+    animation: bounceOutUp 1s 5s forwards linear;
+}
+.lower {
+    animation: bounceOutDown 1s 5s forwards linear;
+}
+.scroller__item {
+    width: calc(50vh * 16 / 9);
+    height: 50vh;
+}
+.scroller__item img {
+    width: 100%;
+    height: 100%;
+}
+

@@ -6,11 +6,16 @@
     <meta http-equiv="Cache-Control" content="no-store">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="/cproduction/cproglobal.css">
+    <link rel="stylesheet" href="/cproduction/component/paging/paging.css">
+    <script src="/cproduction/component/paging/paging.js"></script>
     <link rel="icon" href="../../images/logo/sezan2.ico">
     <title>CONTACT | 聖傘-CreativePRODUCTION</title>
 </head>
 
 <body>
+    <div class="paging"></div>
+    <div class="paging-in"></div>
+
     <div id="humburger"></div>
     <div class="h1-title">
         <h1>CONTACT</h1>
