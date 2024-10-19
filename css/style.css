@@ -159,6 +159,23 @@ h2 {
     border-radius: 50%;
 }
 
+#drawer-input:checked ~ .humburger,
+#drawer-input2:checked ~ .humburger {
+    animation: hum-pushed 1s linear;
+}
+
+@keyframes hum-pushed {
+    0% {
+        box-shadow: 0 0 0 0 rgb(79 79 79 / 50%);
+    }
+    70% {
+        box-shadow: 0 0 0 1.7em rgb(0 0 0 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 1.7em rgb(79 79 79 / 0%);
+    }
+}
+
 .cpro-hmgr {
     background-color: azure;
     box-shadow: #000000 0px 0px 13px;
@@ -245,23 +262,6 @@ h2 {
 
 .drawer-hidden {
     display: none;
-}
-
-#drawer-input:checked ~ .humburger,
-#drawer-input2:checked ~ .humburger {
-    animation: hum-pushed 1s linear;
-}
-
-@keyframes hum-pushed {
-    0% {
-        box-shadow: 0 0 0 0 rgb(79 79 79 / 50%);
-    }
-    70% {
-        box-shadow: 0 0 0 1.7em rgb(0 0 0 / 0%);
-    }
-    100% {
-        box-shadow: 0 0 0 1.7em rgb(79 79 79 / 0%);
-    }
 }
 
 .nav_content {
