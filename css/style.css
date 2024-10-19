@@ -247,6 +247,22 @@ h2 {
     display: none;
 }
 
+#drawer-input:checked ~ .humburger,
+#drawer-input2:checked ~ .humburger {
+    animation: hum-pushed 1s linear;
+}
+
+@keyframes hum-pushed {
+    0% {
+        box-shadow: 0 0 0 0 rgb(79 79 79 / 50%);
+    }
+    70% {
+        box-shadow: 0 0 0 1.7em rgb(0 0 0 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 1.7em rgb(79 79 79 / 0%);
+    }
+}
 
 .nav_content {
     position: absolute;

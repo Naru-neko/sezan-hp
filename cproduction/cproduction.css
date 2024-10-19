@@ -184,16 +184,12 @@ main {
     left: 0;
     margin: 0;
     padding: 0;
+    position: sticky;
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
     align-items: center;
     z-index: 100;
-}
-
-#main-header-use {
-    position: fixed;
-    display: none;
 }
 
 .main-header-wrp::after {

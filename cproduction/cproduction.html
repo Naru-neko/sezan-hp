@@ -62,16 +62,6 @@
     </div>
 
     <div id="humburger"></div>
-    <div class="main-header-wrp" id="main-header-use">
-        <div class="main-header">
-            <div class="main-header-menu">
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#events">events</a>
-            </div>
-        </div>
-    </div>
-
 
     <div id="top">
         <div id="top-filter"></div>
@@ -101,18 +91,18 @@
 
     <main>
 
-        <img src="/images/bg-texture - コピー.png" alt="" class="main-bg">
-        <img src="/images/bgumb.png" alt="" class="bgumb">
-
-        <div class="main-header-wrp" id="main-header-dummy">
+        <div class="main-header-wrp">
             <div class="main-header">
                 <div class="main-header-menu">
                     <a href="#about">About</a>
                     <a href="#works">Works</a>
-                    <a href="#events">Event</a>
+                    <a href="#events">events</a>
                 </div>
             </div>
         </div>
+
+        <img src="/images/bg-texture - コピー.png" alt="" class="main-bg">
+        <img src="/images/bgumb.png" alt="" class="bgumb">
 
         <div class="interval"></div>
 
@@ -312,22 +302,6 @@
         fetch("component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
-    </script>
-
-    <script>
-        window.addEventListener('scroll', function(){
-            if(window.matchMedia('(min-width: 1250px)').matches){
-                var targetTop = document.querySelector('main').offsetTop;
-                if(window.scrollY - 10 > targetTop){
-                    document.querySelector('#main-header-use').style.display = "flex";
-                    document.querySelector('#main-header-dummy').style.display = "none";
-                }
-                else if(window.scrollY < targetTop){
-                    document.querySelector('#main-header-use').style.display = "none";
-                    document.querySelector('#main-header-dummy').style.display = "flex";
-                }
-            }
-        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
