@@ -643,6 +643,10 @@ section {
     .contact-button {
         display: none;
     }
+    .sambnail {
+        height: auto;
+        width: 100%;
+    }
     #cname {
         width: 100%;
     }
