@@ -1,6 +1,6 @@
 html {
     overflow: hidden;
-    animation: scrollLock 0.5s 6s forwards linear;
+    animation: scrollLock 0.5s 4s forwards linear;
 }
 @keyframes scrollLock {
     from {
@@ -25,7 +25,7 @@ html {
     overflow: hidden;
     position: absolute;
     z-index: 1001;
-    animation: fadeOuter 2s 6s forwards linear;
+    animation: fadeOuter 2s 4.5s forwards linear;
 }
 .bg {
     position: absolute;
@@ -90,12 +90,12 @@ html {
 }
 .upper .text {
     font-size: 11vw;
-    animation: fadeIn 1s 2s forwards linear;
+    animation: fadeIn 1s 1s forwards linear;
 }
 .lower .text {
     font-size: 7vw;
     transform: scaleY(1.5);
-    animation: fadeIn 1s 3s forwards linear;
+    animation: fadeIn 1s 1.5s forwards linear;
 }
 .scroller__list {
     display: flex;
@@ -110,10 +110,10 @@ html {
     animation: infinity-scroller-left 10s infinite linear both reverse;
 }
 .upper {
-    animation: bounceOutUp 1s 5s forwards linear;
+    animation: bounceOutUp 1s 4s forwards linear;
 }
 .lower {
-    animation: bounceOutDown 1s 5s forwards linear;
+    animation: bounceOutDown 1s 4s forwards linear;
 }
 .scroller__item {
     width: calc(50vh * 16 / 9);

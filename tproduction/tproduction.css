@@ -3,7 +3,7 @@ html {
     padding: 0;
     width: 100%;
     overflow: hidden;
-    animation: scrollLock 0.5s 5s forwards linear;
+    animation: scrollLock 0.5s 3s forwards linear;
 }
 
 @keyframes scrollLock {
@@ -32,7 +32,7 @@ body{
     margin: auto;
     z-index: 1000;
     background-color: #0e0e0e;
-    animation: opening-fadeout 6.5s linear forwards;
+    animation: opening-fadeout 3.5s linear forwards;
 }
 
 @keyframes opening-fadeout {
@@ -79,7 +79,7 @@ main {
     z-index: 1001;
     mix-blend-mode: difference;
     pointer-events: none;
-    animation: title-move 6s 0.5s linear forwards;
+    animation: title-move 3.5s 0.5s linear forwards;
     opacity: 0;
 }
 
@@ -91,7 +91,7 @@ main {
         left: 50%;
         transform: translate(-50%, 50%);
     }
-    90% {
+    80% {
         opacity: 1;
         width: 50%;
         bottom: 50%;
