@@ -1,3 +1,7 @@
 html {
     font-family: serif;
 }
+
+html, body {
+    overflow-x: hidden;
+}

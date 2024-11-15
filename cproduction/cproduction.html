@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/cproduction/cproglobal.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/cproduction/component/paging/paging.css">
-    <script src="/cproduction/component/paging/paging.js"></script>
     <link rel="icon" href="/images/logo/sezan2.ico">
     <title>聖傘-SEZAN | CreativePRODUCTION</title>
 </head>
@@ -292,6 +291,16 @@
 
     <div id="footer"></div>
 
+    <script src="/cproduction/component/paging/paging.js"></script>
+
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.querySelector('.scroller').style.display = 'none';
+            }, 5500);
+        }
+    </script>
+
     <script>
         fetch("component/header/header.html")
             .then((response) => response.text())
@@ -307,6 +316,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
     <script src="/js/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(function(){
+            var ua = navigator.userAgent;
+            if((ua.indexOf('iPhone')>0 || ua.indexOf('Android')>0)
+                &&ua.indexOf('Mobile')>0){
+                $('.mySwiper').outerHeight( $(window).height() * 0.69 );
+            }else if(ua.indexOf('iPad')>0 || ua.indexOf('Android')>0){
+                $('.mySwiper').outerHeight( $(window).height() * 0.69 );
+            }
+        });
+    </script>
 
     <script>
         $(document).ready(function(){

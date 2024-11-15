@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/tproduction/tproglobal.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link rel="stylesheet" href="/tproduction/component/paging/paging.css">
-    <script src="/tproduction/component/paging/paging.js"></script>
     <link rel="icon" href="/images/logo/sezan2.ico">
     <title>聖傘-SEZAN | TALENT PRODUCTION</title>
 </head>
@@ -29,20 +28,20 @@
                 <img src="/images/logo/logo.png" alt="" class="titlelogo">
 
                 <swiper-container class="mySwiper-top" slides-per-view="auto" centered-slides="true"
-                autoplay="true" loop="true" autoplay-delay="1400" speed="1600">
+                loop="true" autoplay="true" autoplay-delay="1400" speed="1600">
+
+                    <swiper-slide class="top-slide">
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/sena.html');" class="top-link"></a>
+                        <p class="name">Sena Umeaguku</p>
+                        <p class="job">MODEL/DANCER</p>
+                        <img src="/images/cast/sena.jpg" alt="">
+                    </swiper-slide>
 
                     <swiper-slide>
                         <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/air.html');" class="top-link"></a>
                         <p class="name">AIR</p>
                         <p class="job">DANCER</p>
                         <img src="/images/cast/air.jpg" alt="">
-                    </swiper-slide>
-
-                    <swiper-slide>
-                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/sena.html');" class="top-link"></a>
-                        <p class="name">Sena Umeaguku</p>
-                        <p class="job">MODEL/DANCER</p>
-                        <img src="/images/cast/sena.jpg" alt="">
                     </swiper-slide>
 
                     <swiper-slide>
@@ -53,10 +52,31 @@
                     </swiper-slide>
 
                     <swiper-slide>
-                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/kotori.html');" class="top-link"></a>
-                        <p class="name">KOTORI</p>
-                        <p class="job">DANCER/MODEL</p>
-                        <img src="/images/cast/kotori.jpg" alt="">
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/nozomi.html');" class="top-link"></a>
+                        <p class="name">NOZOMI</p>
+                        <p class="job">ACTOR/MODEL</p>
+                        <img src="/images/cast/nozomi.jpg" alt="">
+                    </swiper-slide>
+
+                    <swiper-slide class="top-slide">
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/sena.html');" class="top-link"></a>
+                        <p class="name">Sena Umeaguku</p>
+                        <p class="job">MODEL/DANCER</p>
+                        <img src="/images/cast/sena.jpg" alt="">
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/air.html');" class="top-link"></a>
+                        <p class="name">AIR</p>
+                        <p class="job">DANCER</p>
+                        <img src="/images/cast/air.jpg" alt="">
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/aoba.html');" class="top-link"></a>
+                        <p class="name">AOBA</p>
+                        <p class="job">ACTOR/MODEL</p>
+                        <img src="/images/cast/aoba.jpg" alt="">
                     </swiper-slide>
 
                     <swiper-slide>
@@ -66,12 +86,19 @@
                         <img src="/images/cast/nozomi.jpg" alt="">
                     </swiper-slide>
 
-                    <swiper-slide>
+                    <!-- <swiper-slide>
+                        <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/kotori.html');" class="top-link"></a>
+                        <p class="name">KOTORI</p>
+                        <p class="job">DANCER/MODEL</p>
+                        <img src="/images/cast/kotori.jpg" alt="">
+                    </swiper-slide> -->
+
+                    <!-- <swiper-slide>
                         <a href="javascript:void(0)" onclick="go('/tproduction/talent/talents/uwa.html');" class="top-link"></a>
                         <p class="name">UWA(AGENT)</p>
                         <p class="job">DANCER/MODEL</p>
                         <img src="/images/cast/uwa.jpg" alt="">
-                    </swiper-slide>
+                    </swiper-slide> -->
 
                 </swiper-container>
             </div>
@@ -159,16 +186,28 @@
 
     <div id="footer"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="/tproduction/component/paging/paging.js"></script>
+
     <script>
+        fetch("component/footer/conatactus.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#contact-button").innerHTML = data);
         fetch("component/header/header.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#header").innerHTML = data);
         fetch("component/footer/footer.html")
             .then((response) => response.text())
             .then((data) => document.querySelector("#footer").innerHTML = data);
-        fetch("component/footer/conatactus.html")
-            .then((response) => response.text())
-            .then((data) => document.querySelector("#contact-button").innerHTML = data);
+    </script>
+
+    <script>
+        window.onload = function() {
+            setTimeout(() => {
+                document.querySelector('.opening').style.display = 'none';
+            }, 3500);
+        }
     </script>
 
     <script src="/js/jquery-3.7.1.min.js"></script>
@@ -189,8 +228,6 @@
             });
         });
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 </body>
 </html>

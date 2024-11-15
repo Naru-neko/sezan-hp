@@ -19,8 +19,6 @@ main {
     padding: 0;
 }
 
-
-
 .opening {
     display: block;
     width: 100vw;
@@ -37,11 +35,9 @@ main {
 @keyframes fadeOutOriginal {
     0% {
         opacity: 1;
-        display: block;
     }
     100% {
         opacity: 0;
-        display: none;
     }
 }
 

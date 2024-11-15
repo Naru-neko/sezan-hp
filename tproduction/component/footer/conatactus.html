@@ -2,6 +2,7 @@
 <script src="/tproduction/component/paging/paging.js"></script>
 
 <div class="paging"></div>
+
 <a href="javascript:void(0)" onclick="go('/tproduction/contact/contact.php');" class="contact-button">
     <svg viewBox="0 0 100 100">
         <path d="M 0,50 a 50,50 0 1,1 0,1 z" id="circle" />
@@ -10,10 +11,11 @@
             CONTACT CONTACT CONTACT
           </textPath>
         </text>
-        <img src="/images/hikouki.png" alt="">
     </svg>
+    <img src="/images/hikouki.png" alt="">
 </a>
 <style>
+
     .contact-button {
         width: 12vmin;
         position: fixed;
@@ -26,6 +28,7 @@
     }
 
     .contact-button svg {
+        width: 100%;
         overflow: visible;
         position: relative;
         animation: rotate 10s infinite linear;
@@ -43,10 +46,11 @@
 
     .contact-button img {
         width: 7vmin;
+        height: auto;
         position: absolute;
         inset: 0;
         margin: auto;
-        transform-origin: center ;
+        transform-origin: center;
     }
 
     .contact-button:hover img {
