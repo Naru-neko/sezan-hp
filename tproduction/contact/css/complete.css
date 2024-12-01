@@ -33,7 +33,6 @@ h1{
     margin: 0;
     font-size: 8vmin;
     font-weight: bolder;
-    font-family: "Franklin Gothic";
 }
 
 .contents{
@@ -51,7 +50,6 @@ h2{
     margin-bottom: 4rem;
     font-size: 3vmin;
     font-weight: bolder;
-    font-family: "Franklin Gothic";
     border-bottom: solid 1px #d6d6d6;
 }
 
