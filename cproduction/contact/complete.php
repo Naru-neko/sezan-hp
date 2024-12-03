@@ -24,7 +24,7 @@
             $message3 = "";
         }
     } else {
-        header("Location: contact.php");
+        header("Location: _contact.php");
     }
 ?>
 

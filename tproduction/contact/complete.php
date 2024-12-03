@@ -7,7 +7,8 @@
         $mail = $_POST["mail"];
         $title = $_POST["title"];
         $message = $_POST["inquiry"];
-        $to = "contact2@sezan.tokyo";
+        //$to = "contact2@sezan.tokyo";
+        $to = "shoma.naru@gmail.com";
         $subject = "You got a message from contact form.";//日本語文字化け要対応
         $headers = "MIME-Version: 1.0\r\n"
          . "Content-Transfer-Encoding: 8bit\r\n"
@@ -24,7 +25,7 @@
             $message3 = "";
         }
     } else {
-        header("Location: contact.php");
+        header("Location: _contact.php");
     }
 ?>
 
