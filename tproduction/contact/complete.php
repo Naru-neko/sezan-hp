@@ -8,7 +8,7 @@
         $title = $_POST["title"];
         $message = $_POST["inquiry"];
         //$to = "contact2@sezan.tokyo";
-        $to = "shoma_nrunru@icloud.com";
+        $to = "shoma.naru@gmail.com";
         $subject = "You got a message from contact form.";//日本語文字化け要対応
         $headers = "MIME-Version: 1.0\r\n"
          . "Content-Transfer-Encoding: 8bit\r\n"
