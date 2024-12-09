@@ -12,7 +12,7 @@
         $headers = "MIME-Version: 1.0\r\n"
          . "Content-Transfer-Encoding: 8bit\r\n"
          . "Content-Type: text/plain; charset=UTF-8\r\n"
-         . "From: your_email@example.com";
+         . "From: contact2@sezan.tokyo";
         $body = "名前: $name\nふりがな: $hurigana\n社名: $company\n電話番号: $tel\nメールアドレス: $mail\n件名: $title\n\n$message";
         if (mail($to, $subject, $body, $headers)) {
             $message1 = "お問い合わせが完了しました";
