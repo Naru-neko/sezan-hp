@@ -7,7 +7,7 @@
          . "Content-Type: text/plain; charset=UTF-8\r\n"
          . "From: your_email@example.com";
 
-    if (mail($to, $subject, $body, $headers)) {
+    if (mail($to, $subject, $body)) {
         $message1 = "お問い合わせが完了しました";
         $message2 = "お問い合わせいただき、ありがとうございます。";
         $message3 = "お問い合わせいただいた内容を確認の上、後日ご連絡させていただきます。";
